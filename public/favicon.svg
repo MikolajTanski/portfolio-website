@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="MT.dev">
+  <rect width="32" height="32" rx="8" fill="#0f1318"/>
+  <rect x="1.5" y="1.5" width="29" height="29" rx="6.5" fill="none" stroke="#00f0a0" stroke-opacity="0.28" stroke-width="1"/>
+  <!-- M -->
+  <path fill="#00f0a0" d="M7 10h2.3l2.1 5.5 2.1-5.5H16v12h-1.9v-8.2l-2.4 6.2h-1.4L7.8 13.8V22H6V10z"/>
+  <!-- T -->
+  <path fill="#00f0a0" d="M17.5 10H26v1.9h-3.2V22h-2V11.9H17.5V10z"/>
+</svg>
