@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <!-- Domyślne żądanie /favicon.ico (Chrome itd.) — bez tego na produkcji często brak ikony w karcie -->
+    <link rel="icon" href="/favicon.ico" sizes="32x32" type="image/png" />
     <!-- PNG first: Safari / some tabs ignore SVG-only favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <title>Mikołaj Tański — .NET Developer Portfolio</title>
     <meta
@@ -25,8 +26,11 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://mikolajtanski.vercel.app/apple-touch-icon.png" />
+    <meta property="og:image:type" content="image/png" />
 
     <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="https://mikolajtanski.vercel.app/apple-touch-icon.png" />
     <meta name="twitter:title" content="Mikołaj Tański — .NET Developer Portfolio" />
     <meta
       name="twitter:description"
