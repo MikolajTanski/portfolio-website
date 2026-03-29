@@ -21,7 +21,7 @@ const CertificationsSection = () => {
         >
           <p className="font-mono text-sm mb-2 text-muted-foreground flex flex-wrap items-center">
             <span className="text-primary">~/</span>certifications
-            <span className="text-muted-foreground/45 ml-2 tabular-nums">· 05</span>
+            <span className="text-muted-foreground/45 ml-2 tabular-nums">· 06</span>
             <TerminalCursor />
           </p>
           <h2 className="text-3xl md:text-4xl font-heading font-bold">{t.certifications.sectionTitle}</h2>
@@ -34,10 +34,10 @@ const CertificationsSection = () => {
               href={cert.url}
               target="_blank"
               rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.05 }}
+              transition={{ delay: i * 0.15 }}
               className={`${cardClassName} hover:border-glow`}
             >
               <div className="flex items-start justify-between gap-2 mb-3">

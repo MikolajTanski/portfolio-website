@@ -8,6 +8,7 @@ export type Messages = {
   nav: {
     skills: string;
     experience: string;
+    projects: string;
     education: string;
     certifications: string;
     downloadCv: string;
@@ -41,6 +42,12 @@ export type Messages = {
       points: string[];
     }[];
   };
+  projects: {
+    sectionTitle: string;
+    linkLabelRepo: string;
+    linkLabelCerts: string;
+    items: { title: string; subtitle: string; description: string }[];
+  };
   education: {
     sectionTitle: string;
     items: { degree: string; field: string; school: string; year: string }[];
@@ -64,6 +71,27 @@ export type Messages = {
   };
 };
 
+const projectUrls = [
+  "https://github.com/MikolajTanski/Nebula",
+  "https://github.com/MikolajTanski/Clipper",
+  "https://github.com/MikolajTanski/mango_azure",
+  "https://github.com/MikolajTanski/portfolio-website",
+] as const;
+
+export const projectMeta: readonly {
+  url: string | null;
+  tags: readonly string[];
+}[] = [
+  { url: projectUrls[0], tags: ["Kubernetes", "Terraform", "Argo CD", "Helm"] },
+  { url: projectUrls[1], tags: ["React", "Python", "Flask", "Docker"] },
+  { url: projectUrls[2], tags: [".NET 10", "AKS", "Terraform", "Azure Service Bus", "GitHub Actions"] },
+  { url: projectUrls[3], tags: ["React", "Vite", "TypeScript", "Tailwind CSS", "Vercel"] },
+  {
+    url: null,
+    tags: [".NET", "AKS", "Azure", "Terraform", "GitHub Actions", "PostgreSQL", "Azure Service Bus"],
+  },
+];
+
 export const messagesPl: Messages = {
   meta: {
     title: "Mikołaj Tański — .NET Developer · portfolio",
@@ -74,6 +102,7 @@ export const messagesPl: Messages = {
   nav: {
     skills: "Umiejętności",
     experience: "Doświadczenie",
+    projects: "Projekty",
     education: "Edukacja",
     certifications: "Certyfikaty",
     downloadCv: "Pobierz CV",
@@ -133,6 +162,43 @@ export const messagesPl: Messages = {
           "Przejęcie utrzymania największej aplikacji w organizacji po okresie narosłego długu technicznego i utrudnionej eksploatacji, doprowadzenie do stabilnego, codziennego utrzymania.",
           "Incydenty o podwyższonym priorytecie, analiza przyczyn i wdrażanie poprawek, w architekturze m.in. RabbitMQ.",
         ],
+      },
+    ],
+  },
+  projects: {
+    sectionTitle: "Projekty",
+    linkLabelRepo: "GitHub",
+    linkLabelCerts: "weryfikacja certyfikatów",
+    items: [
+      {
+        title: "Nebula",
+        subtitle: "Środowisko labowe: Kubernetes i GitOps",
+        description:
+          "Projekt demonstracyjny: lokalny klaster Kubernetes z przepływami GitOps, ingress i zarządzaniem sekretami zgodnymi z praktykami produkcyjnymi. Cel: powtarzalna walidacja obrazów i konfiguracji przed wdrożeniem na współdzielone środowiska, bez uzależnienia od zewnętrznego klastra szkoleniowego. {{repo}}",
+      },
+      {
+        title: "Clipper",
+        subtitle: "Merge PDF przy przetwarzaniu lokalnym lub w kontrolowanej infrastrukturze",
+        description:
+          "Aplikacja ogranicza ryzyko związane z przekazywaniem dokumentów do publicznych serwisów online. Oferuje wybór plików, podgląd i scalanie w przeglądarce; operacja merge wykonywana jest przez backend uruchomiony na infrastrukturze pozostającej pod kontrolą organizacji, co ogranicza ekspozycję danych na usługi zewnętrzne. {{repo}}",
+      },
+      {
+        title: "mango_azure",
+        subtitle: "Architektura mikroserwisowa zamówień na Microsoft Azure",
+        description:
+          "Implementacja referencyjna dla scenariusza e-commerce / zamówień (m.in. gastronomia): usługi na Azure Kubernetes Service, infrastruktura w Terraformie, CI/CD w GitHub Actions, integracja przez bramkę API oraz komunikacja asynchroniczna. Rozdzielenie odpowiedzialności między usługami umożliwia niezależne skalowanie komponentów wraz z obciążeniem w porównaniu z monolitem. {{repo}}",
+      },
+      {
+        title: "Strona portfolio",
+        subtitle: "Witryna statyczna: profil, projekty, certyfikaty",
+        description:
+          "Pojedyncza strona z sekcjami (m.in. doświadczenie, projekty, edukacja, certyfikaty), nawigacją kotwicową. {{repo}} · {{certs}}. Hosting statyczny na Vercel; źródła w repozytorium Git, co ułatwia śledzenie zmian i wdrożenia ciągłe.",
+      },
+      {
+        title: "Nautly",
+        subtitle: "Własny startup · W przygotowaniu",
+        description:
+          "Produkt rozwijany zespołowo w modelu startupu; publiczny link i materiały zewnętrzne po ustabilizowaniu oferty. Backend i infrastruktura na Azure: Azure Kubernetes Service, Terraform, GitHub Actions, .NET, PostgreSQL, Azure Service Bus.",
       },
     ],
   },
@@ -199,6 +265,7 @@ export const messagesEn: Messages = {
   nav: {
     skills: "Skills",
     experience: "Experience",
+    projects: "Projects",
     education: "Education",
     certifications: "Certifications",
     downloadCv: "Download CV",
@@ -258,6 +325,43 @@ export const messagesEn: Messages = {
           "Inherited the organization’s largest application after significant technical debt and fragile day-to-day operations, stabilized ownership, and brought maintenance back to a predictable baseline.",
           "Root cause analysis and fixes for high-priority incidents, with RabbitMQ among other integration components in the stack.",
         ],
+      },
+    ],
+  },
+  projects: {
+    sectionTitle: "Projects",
+    linkLabelRepo: "GitHub",
+    linkLabelCerts: "certificate verification",
+    items: [
+      {
+        title: "Nebula",
+        subtitle: "Lab environment: Kubernetes and GitOps",
+        description:
+          "Demonstration stack: local Kubernetes cluster with GitOps, ingress, and secrets handling aligned with production-style practice. Intended for repeatable validation of container images and configuration prior to promotion to shared environments, without dependency on an external training cluster. {{repo}}",
+      },
+      {
+        title: "Clipper",
+        subtitle: "PDF merge on-premises or on controlled infrastructure",
+        description:
+          "Reduces risk associated with uploading documents to public online merge services. Provides file selection, preview, and merge in the browser; merge runs on a backend deployed on infrastructure controlled by the organization, limiting exposure of sensitive data to third-party SaaS paths. {{repo}}",
+      },
+      {
+        title: "mango_azure",
+        subtitle: "Order-processing microservices on Microsoft Azure",
+        description:
+          "Reference implementation for an e-commerce / ordering scenario (including food service): services on Azure Kubernetes Service, infrastructure as code with Terraform, CI/CD pipelines in GitHub Actions, API gateway integration, and asynchronous messaging. Service decomposition supports independent scaling of components under load compared with a monolithic design. {{repo}}",
+      },
+      {
+        title: "Portfolio website",
+        subtitle: "Static site: profile, projects, certifications",
+        description:
+          "Single-page layout with sections for experience, projects, education, and certifications, plus anchor navigation, {{repo}} and {{certs}}. Static hosting on Vercel; content maintained in Git for traceability and straightforward deployment.",
+      },
+      {
+        title: "Nautly",
+        subtitle: "Founding-stage startup · In progress",
+        description:
+          "Team-built product in a startup setting; no public URL yet while the offering stabilises. Azure Kubernetes Service, Terraform, GitHub Actions, .NET, PostgreSQL, and Azure Service Bus.",
       },
     ],
   },

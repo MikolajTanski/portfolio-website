@@ -18,7 +18,7 @@ const EducationSection = () => {
         >
           <p className="font-mono text-sm mb-2 text-muted-foreground flex flex-wrap items-center">
             <span className="text-primary">~/</span>education
-            <span className="text-muted-foreground/45 ml-2 tabular-nums">· 04</span>
+            <span className="text-muted-foreground/45 ml-2 tabular-nums">· 05</span>
             <TerminalCursor />
           </p>
           <h2 className="text-3xl md:text-4xl font-heading font-bold">{t.education.sectionTitle}</h2>
