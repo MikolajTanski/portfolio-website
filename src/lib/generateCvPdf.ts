@@ -1,7 +1,5 @@
 import type { Locale, Messages } from "@/i18n/messages";
-import { projectMeta } from "@/i18n/messages";
 import { SITE_URL, showPublicPhone } from "@/config/site";
-import { projectDescriptionToPdfParts } from "@/lib/parseProjectDescription";
 
 type PdfContent = Record<string, unknown> | Record<string, unknown>[];
 
@@ -205,7 +203,6 @@ export async function downloadCvPdf(t: Messages, locale: Locale): Promise<void> 
   const lastName = nameParts.slice(1).join(" ");
   /** Public portfolio URL in PDF — always production, not localhost when generating locally. */
   const sitePublic = SITE_URL.replace(/\/$/, "");
-  const certsHref = `${sitePublic}/#certifications`;
 
   let cvPhotoDataUrl: string | null = null;
   try {
@@ -370,40 +367,6 @@ export async function downloadCvPdf(t: Messages, locale: Locale): Promise<void> 
     }
   }
 
-  content.push(sectionHeader(t.projects.sectionTitle));
-  for (let i = 0; i < t.projects.items.length; i++) {
-    const proj = t.projects.items[i]!;
-    const repoUrl = projectMeta[i]?.url ?? null;
-    content.push({
-      text: proj.title,
-      bold: true,
-      fontSize: 10.5,
-      color: palette.text,
-      margin: [0, 10, 0, 2],
-    });
-    content.push({
-      text: proj.subtitle,
-      italics: true,
-      fontSize: 9,
-      color: palette.accentDim,
-      margin: [0, 0, 0, 4],
-    });
-    const descParts = projectDescriptionToPdfParts(proj.description, {
-      repoUrl,
-      certsHref,
-      labelRepo: t.projects.linkLabelRepo,
-      labelCerts: t.projects.linkLabelCerts,
-      textColor: palette.textMuted,
-      linkColor: palette.accent,
-    });
-    content.push({
-      text: descParts,
-      fontSize: 9,
-      lineHeight: 1.35,
-      margin: [0, 0, 0, 10],
-    });
-  }
-
   content.push(sectionHeader(t.education.sectionTitle));
   for (const ed of t.education.items) {
     content.push({
@@ -423,7 +386,6 @@ export async function downloadCvPdf(t: Messages, locale: Locale): Promise<void> 
 
   content.push(sectionHeader(t.certifications.sectionTitle));
   for (const c of t.certifications.items) {
-    const status = c.status === "completed" ? (c.year ?? "") : t.certifications.inProgress;
     content.push({
       text: c.title,
       bold: true,
@@ -431,24 +393,14 @@ export async function downloadCvPdf(t: Messages, locale: Locale): Promise<void> 
       color: palette.text,
       margin: [0, 10, 0, 2],
     });
-    const issuerLine = `${c.issuer} (${status})`;
-    if (c.status === "completed" && c.url) {
-      content.push({
-        text: issuerLine,
-        link: c.url,
-        fontSize: 9,
-        color: palette.textMuted,
-        decoration: "underline",
-        margin: [0, 0, 0, 10],
-      });
-    } else {
-      content.push({
-        text: issuerLine,
-        fontSize: 9,
-        color: palette.textMuted,
-        margin: [0, 0, 0, 10],
-      });
-    }
+    content.push({
+      text: `${c.issuer} (${c.year})`,
+      link: c.url,
+      fontSize: 9,
+      color: palette.textMuted,
+      decoration: "underline",
+      margin: [0, 0, 0, 10],
+    });
   }
 
   const docDefinition: Record<string, unknown> = {

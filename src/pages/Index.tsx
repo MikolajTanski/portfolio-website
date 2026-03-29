@@ -2,7 +2,6 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import SkillsSection from "@/components/SkillsSection";
 import ExperienceSection from "@/components/ExperienceSection";
-import ProjectsSection from "@/components/ProjectsSection";
 import EducationSection from "@/components/EducationSection";
 import CertificationsSection from "@/components/CertificationsSection";
 import { useLocale } from "@/i18n/useLocale";
@@ -15,7 +14,6 @@ const Index = () => {
       <HeroSection />
       <SkillsSection />
       <ExperienceSection />
-      <ProjectsSection />
       <EducationSection />
       <CertificationsSection />
       <footer className="py-12 border-t border-border">
