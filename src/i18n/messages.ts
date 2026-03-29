@@ -167,6 +167,15 @@ export const messagesPl: Messages = {
           "Incydenty o podwyższonym priorytecie, analiza przyczyn i wdrażanie poprawek, w architekturze m.in. RabbitMQ.",
         ],
       },
+      {
+        role: ".NET Developer (staż)",
+        company: "oakforge",
+        period: "cze 2022 – gru 2022",
+        points: [
+          "Staż w zespole developerskim przy realnych zadaniach w ekosystemie .NET: współpraca z kodem produkcyjnym, code review oraz przestrzeganie przyjętych w projekcie standardów.",
+          "Współudział w rozwoju i utrzymaniu komponentów backendowych oraz wdrażaniu dobrych praktyk inżynierskich.",
+        ],
+      },
     ],
   },
   projects: {
@@ -342,6 +351,15 @@ export const messagesEn: Messages = {
           "Introduced CI/CD from the ground up with TeamCity and Octopus Deploy, with shorter, repeatable deployments and a more predictable release cadence.",
           "Inherited the organization’s largest application after significant technical debt and fragile day-to-day operations, stabilized ownership, and brought maintenance back to a predictable baseline.",
           "Root cause analysis and fixes for high-priority incidents, with RabbitMQ among other integration components in the stack.",
+        ],
+      },
+      {
+        role: ".NET Developer (internship)",
+        company: "oakforge",
+        period: "Jun 2022 – Dec 2022",
+        points: [
+          "Internship with a product engineering team on real .NET work: exposure to production codebases, code review, and team conventions.",
+          "Contributed to backend components and day-to-day engineering practices alongside senior developers.",
         ],
       },
     ],

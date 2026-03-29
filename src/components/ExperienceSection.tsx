@@ -26,7 +26,7 @@ const ExperienceSection = () => {
         <div className="space-y-8">
           {experiences.map((exp, i) => (
             <motion.div
-              key={exp.company}
+              key={`${exp.company}-${exp.period}`}
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
