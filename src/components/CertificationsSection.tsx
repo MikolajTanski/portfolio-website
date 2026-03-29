@@ -6,7 +6,7 @@ import { Award, ExternalLink } from "lucide-react";
 const easeSoft = [0.22, 1, 0.36, 1] as const;
 
 const cardClassName =
-  "group flex flex-col bg-card border border-border rounded-lg p-5 transition-all duration-300 glow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background";
+  "group flex flex-col bg-card border border-border rounded-lg p-5 transition-[border-color,box-shadow] duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background";
 
 const CertificationsSection = () => {
   const { t } = useLocale();
@@ -43,7 +43,7 @@ const CertificationsSection = () => {
                   href={cert.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`${cardClassName} hover:border-glow`}
+                  className={`${cardClassName} hover:border-glow hover:glow`}
                   {...motionProps}
                 >
                   <div className="flex items-start justify-between gap-2 mb-3">
@@ -68,7 +68,7 @@ const CertificationsSection = () => {
             return (
               <motion.div
                 key={cert.title}
-                className={`${cardClassName} border-dashed border-primary/25 opacity-95 cursor-default`}
+                className={`${cardClassName} border-dashed border-primary/25 opacity-95 cursor-default hover:border-glow hover:glow`}
                 aria-label={`${cert.title}, ${t.certifications.upcomingLabel}`}
                 {...motionProps}
               >

@@ -12,7 +12,7 @@ import { useLocale } from "@/i18n/useLocale";
 const easeSoft = [0.22, 1, 0.36, 1] as const;
 
 const cardClass =
-  "flex flex-col bg-card border border-border rounded-lg p-6 transition-all duration-300 glow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background h-full";
+  "flex flex-col bg-card border border-border rounded-lg p-6 transition-[border-color,box-shadow] duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background h-full";
 
 const ProjectsSection = () => {
   const { t } = useLocale();
@@ -68,7 +68,7 @@ const ProjectsSection = () => {
             return (
               <motion.div
                 key={project.title}
-                className={`group ${cardClass} ${cardPending} ${!pending ? "hover:border-glow" : ""}`}
+                className={`group ${cardClass} ${cardPending} hover:border-glow hover:glow`}
                 initial={reduceMotion ? { y: 0 } : { y: 14 }}
                 whileInView={{ y: 0 }}
                 viewport={{ once: true, amount: 0.08, margin: "0px 0px -12% 0px" }}
