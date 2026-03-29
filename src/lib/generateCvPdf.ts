@@ -386,6 +386,7 @@ export async function downloadCvPdf(t: Messages, locale: Locale): Promise<void> 
 
   content.push(sectionHeader(t.certifications.sectionTitle));
   for (const c of t.certifications.items) {
+    if (!c.includeInCv || !c.url || !c.year) continue;
     content.push({
       text: c.title,
       bold: true,

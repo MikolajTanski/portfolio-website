@@ -54,11 +54,15 @@ export type Messages = {
   };
   certifications: {
     sectionTitle: string;
+    /** Wpis planowany (tylko strona, nie PDF) */
+    upcomingLabel: string;
     items: {
       title: string;
       issuer: string;
-      year: string;
-      url: string;
+      year?: string;
+      url?: string;
+      /** false = wyłącznie portfolio; nie trafia do generowanego CV */
+      includeInCv: boolean;
     }[];
   };
   footer: { copyright: string };
@@ -221,24 +225,38 @@ export const messagesPl: Messages = {
   },
   certifications: {
     sectionTitle: "Certyfikaty",
+    upcomingLabel: "w przygotowaniu",
     items: [
       {
         title: "Model Context Protocol: Advanced Topics",
         issuer: "Anthropic Academy",
         year: "2026",
         url: "https://verify.skilljar.com/c/mm58gfuvm9ze",
+        includeInCv: true,
       },
       {
         title: "Claude Code in Action",
         issuer: "Anthropic Academy",
         year: "2026",
         url: "https://verify.skilljar.com/c/2ynbxcvjkjk2",
+        includeInCv: true,
       },
       {
         title: "Introduction to subagents",
         issuer: "Anthropic Academy",
         year: "2026",
         url: "https://verify.skilljar.com/c/nmd54onbzr24",
+        includeInCv: true,
+      },
+      {
+        title: "Microsoft Certified: Azure Administrator Associate (AZ-104)",
+        issuer: "Microsoft",
+        includeInCv: false,
+      },
+      {
+        title: "HashiCorp Certified: Terraform Associate",
+        issuer: "HashiCorp",
+        includeInCv: false,
       },
     ],
   },
@@ -384,24 +402,38 @@ export const messagesEn: Messages = {
   },
   certifications: {
     sectionTitle: "Certifications",
+    upcomingLabel: "Coming soon",
     items: [
       {
         title: "Model Context Protocol: Advanced Topics",
         issuer: "Anthropic Academy",
         year: "2026",
         url: "https://verify.skilljar.com/c/mm58gfuvm9ze",
+        includeInCv: true,
       },
       {
         title: "Claude Code in Action",
         issuer: "Anthropic Academy",
         year: "2026",
         url: "https://verify.skilljar.com/c/2ynbxcvjkjk2",
+        includeInCv: true,
       },
       {
         title: "Introduction to subagents",
         issuer: "Anthropic Academy",
         year: "2026",
         url: "https://verify.skilljar.com/c/nmd54onbzr24",
+        includeInCv: true,
+      },
+      {
+        title: "Microsoft Certified: Azure Administrator Associate (AZ-104)",
+        issuer: "Microsoft",
+        includeInCv: false,
+      },
+      {
+        title: "HashiCorp Certified: Terraform Associate",
+        issuer: "HashiCorp",
+        includeInCv: false,
       },
     ],
   },
