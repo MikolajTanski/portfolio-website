@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Download, Menu, X } from "lucide-react";
 import { useLocale } from "@/i18n/useLocale";
 import type { Locale } from "@/i18n/messages";
+import { downloadCvPdf } from "@/lib/generateCvPdf";
 
 function LocaleToggle() {
   const { locale, setLocale, t } = useLocale();
@@ -39,7 +40,6 @@ const Navbar = () => {
   const handleDownloadCv = async () => {
     setCvLoading(true);
     try {
-      const { downloadCvPdf } = await import("@/lib/generateCvPdf");
       await downloadCvPdf(t, locale);
     } catch (err) {
       console.error(err);
