@@ -169,7 +169,7 @@ export const messagesPl: Messages = {
       },
       {
         role: ".NET Developer (staż)",
-        company: "oakforge",
+        company: "Oakforge",
         period: "cze 2022 – gru 2022",
         points: [
           "Staż w zespole developerskim przy realnych zadaniach w ekosystemie .NET: współpraca z kodem produkcyjnym, code review oraz przestrzeganie przyjętych w projekcie standardów.",
@@ -355,7 +355,7 @@ export const messagesEn: Messages = {
       },
       {
         role: ".NET Developer (internship)",
-        company: "oakforge",
+        company: "Oakforge",
         period: "Jun 2022 – Dec 2022",
         points: [
           "Internship with a product engineering team on real .NET work: exposure to production codebases, code review, and team conventions.",
