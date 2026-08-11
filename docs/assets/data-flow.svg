@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="920" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b0d10"/>
+      <stop offset="1" stop-color="#000d08"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#00ff88"/>
+    </marker>
+    <marker id="arrowGray" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#6b7280"/>
+    </marker>
+  </defs>
+
+  <rect width="920" height="520" rx="16" fill="url(#bg)"/>
+  <text x="460" y="36" text-anchor="middle" fill="#e5fef4" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600">PrzepByw danych  od wej[cia na stron do pobrania CV</text>
+
+  <!-- Step 1 -->
+  <rect x="40" y="60" width="160" height="70" rx="8" fill="#14532d" stroke="#00ff88" stroke-width="1.5"/>
+  <text x="120" y="88" text-anchor="middle" fill="#00ff88" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600">1. Wej[cie</text>
+  <text x="120" y="108" text-anchor="middle" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="10">Odwiedzajcy otwiera URL</text>
+
+  <path d="M210 95 H250" stroke="#00ff88" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 2 -->
+  <rect x="260" y="60" width="160" height="70" rx="8" fill="#0a1f14" stroke="#00ff88" stroke-width="1.5"/>
+  <text x="340" y="88" text-anchor="middle" fill="#00ff88" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600">2. Aadowanie SPA</text>
+  <text x="340" y="108" text-anchor="middle" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="10">Vite bundle z CDN</text>
+
+  <path d="M430 95 H470" stroke="#00ff88" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 3 -->
+  <rect x="480" y="60" width="180" height="70" rx="8" fill="#0a1f14" stroke="#00c878" stroke-width="1.5"/>
+  <text x="570" y="88" text-anchor="middle" fill="#00c878" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600">3. LocaleProvider</text>
+  <text x="570" y="108" text-anchor="middle" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="10">PL lub EN z localStorage</text>
+
+  <path d="M670 95 H710" stroke="#00ff88" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 4 -->
+  <rect x="720" y="60" width="160" height="70" rx="8" fill="#0a1f14" stroke="#00ff88" stroke-width="1.5"/>
+  <text x="800" y="88" text-anchor="middle" fill="#00ff88" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600">4. Render sekcji</text>
+  <text x="800" y="108" text-anchor="middle" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="10">messages.ts ’ UI</text>
+
+  <!-- Central data box -->
+  <rect x="200" y="170" width="520" height="120" rx="12" fill="#0a1f14" stroke="#374151" stroke-width="1.5"/>
+  <text x="460" y="200" text-anchor="middle" fill="#e5fef4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600">Jedno zródBo tre[ci  messages.ts</text>
+  <text x="460" y="225" text-anchor="middle" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="11">hero · skills · experience · projects · education · certifications</text>
+  <text x="460" y="248" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">+ projectMeta (linki GitHub, tagi technologii)</text>
+  <text x="460" y="272" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">Zmiana tre[ci w jednym pliku ’ aktualizacja strony i CV</text>
+
+  <path d="M570 130 V165" stroke="#00ff88" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M460 290 V320" stroke="#00ff88" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- User actions -->
+  <rect x="40" y="330" width="200" height="80" rx="8" fill="#0a1f14" stroke="#374151" stroke-width="1.5"/>
+  <text x="140" y="358" text-anchor="middle" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600">Przewijanie sekcji</text>
+  <text x="140" y="378" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">Kotwice w Navbar</text>
+  <text x="140" y="396" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">Animacje scroll</text>
+
+  <rect x="280" y="330" width="200" height="80" rx="8" fill="#0a1f14" stroke="#374151" stroke-width="1.5"/>
+  <text x="380" y="358" text-anchor="middle" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600">Zmiana jzyka</text>
+  <text x="380" y="378" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">PL ” EN toggle</text>
+  <text x="380" y="396" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">Meta tagi SEO aktualizowane</text>
+
+  <rect x="520" y="330" width="200" height="80" rx="8" fill="#0a1f14" stroke="#374151" stroke-width="1.5"/>
+  <text x="620" y="358" text-anchor="middle" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600">Linki zewntrzne</text>
+  <text x="620" y="378" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">GitHub · certyfikaty</text>
+  <text x="620" y="396" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">Email · tel (dev only)</text>
+
+  <rect x="700" y="330" width="180" height="80" rx="8" fill="#14532d" stroke="#00ff88" stroke-width="2"/>
+  <text x="790" y="358" text-anchor="middle" fill="#00ff88" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600">Pobierz CV</text>
+  <text x="790" y="378" text-anchor="middle" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="10">pdfmake w przegldarce</text>
+  <text x="790" y="396" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">Bez wysyBki na serwer</text>
+
+  <!-- CV flow -->
+  <path d="M790 410 V440" stroke="#00ff88" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="560" y="450" width="300" height="50" rx="8" fill="#0a1f14" stroke="#00a060" stroke-width="1.5"/>
+  <text x="710" y="480" text-anchor="middle" fill="#e5fef4" font-family="Arial, Helvetica, sans-serif" font-size="11">messages + cv-photo.png ’ PDF lokalnie na dysku u|ytkownika</text>
+
+  <text x="460" y="510" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">Dane nigdy nie opuszczaj przegldarki (poza statycznymi plikami z CDN)</text>
+</svg>

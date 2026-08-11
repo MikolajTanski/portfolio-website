@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 480" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="920" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b0d10"/>
+      <stop offset="0.5" stop-color="#000000"/>
+      <stop offset="1" stop-color="#000d08"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#00ff88"/>
+      <stop offset="1" stop-color="#00a060"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#00ff88"/>
+    </marker>
+  </defs>
+
+  <rect width="920" height="480" rx="16" fill="url(#bg)"/>
+  <text x="460" y="36" text-anchor="middle" fill="#e5fef4" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600">Portfolio  architektura wysokiego poziomu</text>
+
+  <!-- Browser -->
+  <rect x="40" y="70" width="180" height="100" rx="10" fill="#0a1f14" stroke="#00ff88" stroke-width="1.5"/>
+  <text x="130" y="98" text-anchor="middle" fill="#00ff88" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600">Przegldarka</text>
+  <text x="130" y="118" text-anchor="middle" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="11">React SPA</text>
+  <text x="130" y="136" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">PL / EN, nawigacja</text>
+  <text x="130" y="154" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">Pobierz CV</text>
+
+  <path d="M230 120 H290" stroke="#00ff88" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="260" y="110" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="9">HTTPS</text>
+
+  <!-- Vercel CDN -->
+  <rect x="300" y="70" width="180" height="100" rx="10" fill="#0a1f14" stroke="#00c878" stroke-width="1.5"/>
+  <text x="390" y="98" text-anchor="middle" fill="#00c878" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600">Vercel CDN</text>
+  <text x="390" y="118" text-anchor="middle" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="11">Statyczne pliki</text>
+  <text x="390" y="136" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">index.html + JS + CSS</text>
+  <text x="390" y="154" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">dist/</text>
+
+  <path d="M490 120 H550" stroke="#00ff88" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- React App -->
+  <rect x="560" y="55" width="320" height="130" rx="10" fill="#0a1f14" stroke="url(#green)" stroke-width="2"/>
+  <text x="720" y="82" text-anchor="middle" fill="#00ff88" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600">Aplikacja React (klient)</text>
+  <text x="720" y="102" text-anchor="middle" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="11">Sekcje: Hero ù Skills ù Experience ù Projects</text>
+  <text x="720" y="120" text-anchor="middle" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="11">Education ù Certifications ù Navbar</text>
+  <text x="720" y="140" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">Framer Motion ù Tailwind CSS</text>
+  <text x="720" y="158" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">Brak backendu ù brak bazy danych</text>
+
+  <!-- messages.ts -->
+  <rect x="40" y="220" width="200" height="90" rx="10" fill="#0a1f14" stroke="#00ff88" stroke-width="1.5"/>
+  <text x="140" y="248" text-anchor="middle" fill="#00ff88" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600">messages.ts</text>
+  <text x="140" y="268" text-anchor="middle" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="10">Tre[ PL / EN</text>
+  <text x="140" y="286" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">Do[wiadczenie, projekty, CV</text>
+
+  <!-- localStorage -->
+  <rect x="280" y="220" width="180" height="90" rx="10" fill="#0a1f14" stroke="#374151" stroke-width="1.5"/>
+  <text x="370" y="248" text-anchor="middle" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600">localStorage</text>
+  <text x="370" y="268" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">portfolio-locale</text>
+  <text x="370" y="286" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">Zapamitany jzyk</text>
+
+  <!-- pdfmake -->
+  <rect x="500" y="220" width="180" height="90" rx="10" fill="#0a1f14" stroke="#00a060" stroke-width="1.5"/>
+  <text x="590" y="248" text-anchor="middle" fill="#00a060" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600">pdfmake</text>
+  <text x="590" y="268" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">Generowanie CV w przegldarce</text>
+  <text x="590" y="286" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">Dynamiczny import</text>
+
+  <!-- public assets -->
+  <rect x="720" y="220" width="160" height="90" rx="10" fill="#0a1f14" stroke="#374151" stroke-width="1.5"/>
+  <text x="800" y="248" text-anchor="middle" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600">public/</text>
+  <text x="800" y="268" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">Zdjcie CV, favicon</text>
+  <text x="800" y="286" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">robots.txt</text>
+
+  <!-- Arrows from app to data sources -->
+  <path d="M620 190 V210" stroke="#00ff88" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M680 190 C680 210 140 210 140 218" stroke="#00ff88" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M720 190 C720 210 370 210 370 218" stroke="#374151" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M760 190 C760 210 590 210 590 218" stroke="#00a060" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M800 190 C800 210 800 210 800 218" stroke="#374151" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Output -->
+  <rect x="300" y="360" width="320" height="50" rx="8" fill="#14532d" stroke="#00ff88" stroke-width="1"/>
+  <text x="460" y="392" text-anchor="middle" fill="#e5fef4" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600">CV_pl.pdf ∑ CV_en.pdf ó generowane lokalnie</text>
+  <path d="M590 310 V355" stroke="#00ff88" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Legend -->
+  <text x="40" y="450" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">Wszystko dziaBa po stronie klienta  zero serwera aplikacyjnego, zero API, zero kosztùw bazy danych</text>
+</svg>

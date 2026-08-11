@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="920" y2="460" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b0d10"/>
+      <stop offset="1" stop-color="#000d08"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#00ff88"/>
+    </marker>
+  </defs>
+
+  <rect width="920" height="460" rx="16" fill="url(#bg)"/>
+  <text x="460" y="36" text-anchor="middle" fill="#e5fef4" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600">Opcje wdro|enia  statyczna strona (dist/)</text>
+
+  <!-- Build -->
+  <rect x="340" y="55" width="240" height="55" rx="8" fill="#14532d" stroke="#00ff88" stroke-width="2"/>
+  <text x="460" y="80" text-anchor="middle" fill="#00ff88" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600">npm run build</text>
+  <text x="460" y="98" text-anchor="middle" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="10">Vite ’ folder dist/</text>
+
+  <!-- Arrows down -->
+  <path d="M380 110 V140" stroke="#00ff88" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M460 110 V140" stroke="#00ff88" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M540 110 V140" stroke="#00ff88" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Vercel (current) -->
+  <rect x="40" y="150" width="200" height="120" rx="10" fill="#0a1f14" stroke="#00ff88" stroke-width="2"/>
+  <text x="140" y="178" text-anchor="middle" fill="#00ff88" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600">Vercel </text>
+  <text x="140" y="198" text-anchor="middle" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="10">Obecne wdro|enie</text>
+  <text x="140" y="216" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">Auto-deploy z GitHub</text>
+  <text x="140" y="234" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">Darmowy tier</text>
+  <text x="140" y="252" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">CDN globalny</text>
+
+  <!-- Netlify -->
+  <rect x="260" y="150" width="200" height="120" rx="10" fill="#0a1f14" stroke="#374151" stroke-width="1.5"/>
+  <text x="360" y="178" text-anchor="middle" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600">Netlify</text>
+  <text x="360" y="198" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">Drag &amp; drop dist/</text>
+  <text x="360" y="216" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">Preview per PR</text>
+  <text x="360" y="234" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">Formularze (opcjonalnie)</text>
+  <text x="360" y="252" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">Darmowy tier</text>
+
+  <!-- Cloudflare Pages -->
+  <rect x="480" y="150" width="200" height="120" rx="10" fill="#0a1f14" stroke="#374151" stroke-width="1.5"/>
+  <text x="580" y="178" text-anchor="middle" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600">Cloudflare Pages</text>
+  <text x="580" y="198" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">Szybki CDN</text>
+  <text x="580" y="216" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">Nieograniczony ruch (free)</text>
+  <text x="580" y="234" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">Integracja z DNS CF</text>
+  <text x="580" y="252" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">Workers (edge)</text>
+
+  <!-- Azure Static Web Apps -->
+  <rect x="700" y="150" width="180" height="120" rx="10" fill="#0a1f14" stroke="#374151" stroke-width="1.5"/>
+  <text x="790" y="178" text-anchor="middle" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600">Azure Static Web Apps</text>
+  <text x="790" y="198" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">Spójno[ z Azure stack</text>
+  <text x="790" y="216" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">GitHub Actions</text>
+  <text x="790" y="234" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">Custom domain</text>
+  <text x="790" y="252" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">Free tier dostpny</text>
+
+  <!-- Comparison table visual -->
+  <rect x="40" y="300" width="840" height="140" rx="10" fill="#0a1f14" stroke="#374151" stroke-width="1"/>
+  <text x="460" y="328" text-anchor="middle" fill="#e5fef4" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600">Kryteria wyboru</text>
+
+  <text x="80" y="358" fill="#00ff88" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600">Koszt:</text>
+  <text x="140" y="358" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="11">$0/mies. przy ruchu portfolio (wszystkie opcje maj darmowy plan)</text>
+
+  <text x="80" y="382" fill="#00ff88" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600">Czas wdro|enia:</text>
+  <text x="200" y="382" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="11">~5 minut  podBczenie repo + build command</text>
+
+  <text x="80" y="406" fill="#00ff88" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600">Wymagania:</text>
+  <text x="170" y="406" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="11">Build: npm run build · Output: dist · Brak serwera Node w runtime</text>
+
+  <text x="80" y="430" fill="#00ff88" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600">Rekomendacja:</text>
+  <text x="190" y="430" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="11">Vercel (obecnie)  zero konfiguracji, szybki deploy, dobra integracja z React/Vite</text>
+</svg>

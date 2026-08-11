@@ -1,80 +1,92 @@
-# Professional Portfolio — Mikołaj Tański
+# portfolio-website
 
-A single-page professional presence for a **.NET / DevOps engineer** with a focus on **AI integration** and cloud-oriented delivery. The site presents experience, projects, education, and certifications in a clear narrative suitable for recruiters, clients, and technical stakeholders.
+![Architektura — portfolio-website](docs/assets/architecture.svg)
 
-## Purpose
+> Statyczna aplikacja React — jednostronicowe portfolio z dwujęzycznością (PL/EN) i generowaniem CV w przeglądarce.
 
-- **Personal brand & credibility** — structured sections (skills, experience, projects, education, certifications) support hiring and networking conversations.
-- **Fast first impression** — lightweight client-side app, responsive layout, readable on desktop and mobile.
-- **Action-oriented** — outbound links to repositories, certificates, and contact channels where relevant.
+**Demo:** [mikolajtanski.vercel.app](https://mikolajtanski.vercel.app)
 
-## Technology overview
+---
 
-| Area | Choice |
-|------|--------|
-| **Framework** | React 18 with TypeScript |
-| **Build & dev** | Vite 5 (fast HMR, optimised production bundles) |
-| **Styling** | Tailwind CSS 3, custom design tokens (dark theme), `tailwindcss-animate` |
-| **Motion** | Framer Motion for section entrance animations |
-| **Routing** | React Router (single main route + 404) |
-| **Icons** | Lucide React |
-| **Quality** | ESLint, Vitest for unit tests |
+## Czym jest ten projekt?
 
-Static assets are emitted to `dist/` and can be deployed to any static host (e.g. Vercel, Netlify, Cloudflare Pages, Azure Static Web Apps, S3 + CloudFront).
+Lekki **SPA bez backendu** — treść w jednym pliku TypeScript, deploy jako statyczne pliki na CDN.
 
-## Prerequisites
+| Cecha | Opis |
+|-------|------|
+| **Architektura** | React + Vite, statyczny deploy, zero API |
+| **i18n** | PL / EN, persystencja w localStorage |
+| **CV PDF** | pdfmake, generowanie po stronie klienta |
+| **Hosting** | Vercel (dowolny static host) |
+| **Koszt utrzymania** | $0/mies. na free tier |
 
-- **Node.js** 18.x or newer (20 LTS recommended)
-- **npm** 9+ (bundled with current Node installers)
+---
 
-## Getting started
+## Jak to działa
 
-Clone the repository and install dependencies:
+![Przepływ danych](docs/assets/data-flow.svg)
+
+1. **CDN** serwuje bundle React z folderu `dist/`
+2. **LocaleProvider** ustawia język (PL/EN) z localStorage
+3. **Sekcje** renderują treść z `messages.ts`
+4. **Pobierz CV** — pdfmake generuje PDF lokalnie w przeglądarce
+
+---
+
+## Struktura strony
+
+![Mapa modułów](docs/assets/sections-map.svg)
+
+Jedna strona SPA — moduły konfigurowalne przez `messages.ts`. Szczegóły → [architektura](docs/architecture.md)
+
+---
+
+## Dokumentacja
+
+→ **[docs/README.md](docs/README.md)**
+
+| Sekcja | Opis |
+|--------|------|
+| [Przegląd](docs/01-overview.md) | Problem, rozwiązanie, zakres MVP |
+| [Wartość biznesowa](docs/02-business.md) | Koszt, czas, scenariusze wdrożenia |
+| [Architektura](docs/architecture.md) | Warstwy, przepływ danych, diagramy |
+| [Wdrożenie](docs/deployment.md) | Vercel, alternatywy, domena |
+| [Personalizacja](docs/customization.md) | Edycja treści, język, CV |
+
+---
+
+## Szybki start
 
 ```bash
 npm install
+npm run dev      # http://localhost:8080
+npm run build    # → dist/
+npm run preview  # podgląd produkcji
 ```
 
-### Local development
+| Komenda | Opis |
+|---------|------|
+| `npm run lint` | ESLint |
+| `npm run test` | Vitest |
 
-```bash
-npm run dev
-```
+**Wymagania:** Node.js 18+ (20 LTS zalecane), npm 9+
 
-Opens the Vite dev server (default port **8080**; if busy, Vite picks the next free port). Edit files under `src/`; changes hot-reload in the browser.
+---
 
-### Production build
+## Stack
 
-```bash
-npm run build
-```
+React 18 · TypeScript · Vite 5 · Tailwind CSS · Framer Motion · pdfmake · Vercel
 
-Output is written to **`dist/`**. Preview the production build locally:
+---
 
-```bash
-npm run preview
-```
+## Wdrożenie
 
-### Other scripts
+![Opcje hostingu](docs/assets/deployment-options.svg)
 
-| Command | Description |
-|---------|-------------|
-| `npm run lint` | Run ESLint on the project |
-| `npm run test` | Run Vitest once |
-| `npm run test:watch` | Vitest in watch mode |
+Build → `dist/` → dowolny static host. Obecnie: **Vercel**. Więcej → [wdrożenie](docs/deployment.md)
 
-## Project structure (high level)
+---
 
-- `src/pages/` — page shells (`Index`, `NotFound`)
-- `src/components/` — page sections (hero, skills, experience, etc.)
-- `src/index.css` — global styles and Tailwind layers
-- `public/` — static files served as-is (e.g. `robots.txt`)
-- `index.html` — document shell and meta tags for SEO / sharing
+## Licencja
 
-## Customisation
-
-Replace copy, links, and assets to match your profile. Key touchpoints: section components under `src/components/`, meta tags in `index.html`, and `public/` for additional static files (e.g. Open Graph images once hosted).
-
-## Licence
-
-Private project; all rights reserved unless otherwise stated by the author.
+Projekt prywatny; wszelkie prawa zastrzeżone.
