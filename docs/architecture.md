@@ -6,7 +6,7 @@ Statyczna aplikacja React (SPA) bez backendu. Cała treść i logika działają 
 
 ## Diagram wysokiego poziomu
 
-![Architektura](assets/architecture.svg)
+![Architektura](assets/architecture.png)
 
 ```mermaid
 flowchart TD
@@ -40,7 +40,7 @@ flowchart TD
 
 ## Przepływ danych
 
-![Przepływ danych](assets/data-flow.svg)
+![Przepływ danych](assets/data-flow.png)
 
 ### 1. Wejście na stronę
 
@@ -67,7 +67,7 @@ Komponenty sekcji używają `useLocale()` → `messagesPl` lub `messagesEn`.
 
 ## Mapa modułów strony
 
-![Mapa sekcji](assets/sections-map.svg)
+![Mapa sekcji](assets/sections-map.png)
 
 Sekcje to **moduły konfigurowalne** — treść pochodzi z `messages.ts`, layout z komponentów w `src/components/`.
 
@@ -157,7 +157,7 @@ Zmiana w `messages.ts` propaguje się do UI i PDF bez dodatkowej synchronizacji.
 
 ## Przepływ odwiedzającego
 
-![User journey](assets/user-journey.svg)
+![User journey](assets/user-journey.png)
 
 Przepływ po modułach produktu — niezależny od konkretnej treści w `messages.ts`.
 

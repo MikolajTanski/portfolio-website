@@ -11,48 +11,48 @@
   </defs>
 
   <rect width="920" height="400" rx="16" fill="url(#bg)"/>
-  <text x="460" y="36" text-anchor="middle" fill="#e5fef4" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600">Przep?yw odwiedzaj?cego ù modu?y produktu</text>
+  <text x="460" y="36" text-anchor="middle" fill="#e5fef4" font-family="Arial, sans-serif" font-size="18" font-weight="600">Przeplyw odwiedzajacego - moduly produktu</text>
 
   <rect x="40" y="150" width="130" height="65" rx="8" fill="#14532d" stroke="#00ff88" stroke-width="1.5"/>
-  <text x="105" y="175" text-anchor="middle" fill="#00ff88" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600">Wej?cie</text>
-  <text x="105" y="195" text-anchor="middle" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="10">CDN ? SPA load</text>
+  <text x="105" y="175" text-anchor="middle" fill="#00ff88" font-family="Arial, sans-serif" font-size="11" font-weight="600">Wejscie</text>
+  <text x="105" y="195" text-anchor="middle" fill="#9ca3af" font-family="Arial, sans-serif" font-size="10">CDN to SPA load</text>
 
   <path d="M180 182 H210" stroke="#00ff88" stroke-width="2" marker-end="url(#arrow)"/>
 
   <rect x="220" y="150" width="130" height="65" rx="8" fill="#0a1f14" stroke="#00ff88" stroke-width="1.5"/>
-  <text x="285" y="175" text-anchor="middle" fill="#00ff88" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600">Hero</text>
-  <text x="285" y="195" text-anchor="middle" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="10">Intro + kontakt</text>
+  <text x="285" y="175" text-anchor="middle" fill="#00ff88" font-family="Arial, sans-serif" font-size="11" font-weight="600">Hero</text>
+  <text x="285" y="195" text-anchor="middle" fill="#9ca3af" font-family="Arial, sans-serif" font-size="10">Intro + kontakt</text>
 
   <path d="M360 182 H390" stroke="#00ff88" stroke-width="2" marker-end="url(#arrow)"/>
 
   <rect x="400" y="150" width="130" height="65" rx="8" fill="#0a1f14" stroke="#00c878" stroke-width="1.5"/>
-  <text x="465" y="175" text-anchor="middle" fill="#00c878" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600">Sekcje</text>
-  <text x="465" y="195" text-anchor="middle" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="10">Skills ù Exp ù Projects</text>
+  <text x="465" y="175" text-anchor="middle" fill="#00c878" font-family="Arial, sans-serif" font-size="11" font-weight="600">Sekcje</text>
+  <text x="465" y="195" text-anchor="middle" fill="#9ca3af" font-family="Arial, sans-serif" font-size="10">Skills, Exp, Projects</text>
 
   <path d="M540 182 H570" stroke="#00ff88" stroke-width="2" marker-end="url(#arrow)"/>
 
   <rect x="580" y="150" width="130" height="65" rx="8" fill="#0a1f14" stroke="#00c878" stroke-width="1.5"/>
-  <text x="645" y="175" text-anchor="middle" fill="#00c878" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600">Locale</text>
-  <text x="645" y="195" text-anchor="middle" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="10">PL ? EN toggle</text>
+  <text x="645" y="175" text-anchor="middle" fill="#00c878" font-family="Arial, sans-serif" font-size="11" font-weight="600">Locale</text>
+  <text x="645" y="195" text-anchor="middle" fill="#9ca3af" font-family="Arial, sans-serif" font-size="10">PL / EN toggle</text>
 
   <path d="M720 182 H750" stroke="#00ff88" stroke-width="2" marker-end="url(#arrow)"/>
 
   <rect x="760" y="150" width="120" height="65" rx="8" fill="#14532d" stroke="#00ff88" stroke-width="2"/>
-  <text x="820" y="175" text-anchor="middle" fill="#00ff88" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600">Akcja</text>
-  <text x="820" y="195" text-anchor="middle" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="10">CV / link / email</text>
+  <text x="820" y="175" text-anchor="middle" fill="#00ff88" font-family="Arial, sans-serif" font-size="11" font-weight="600">Akcja</text>
+  <text x="820" y="195" text-anchor="middle" fill="#9ca3af" font-family="Arial, sans-serif" font-size="10">CV / link / email</text>
 
   <rect x="80" y="260" width="200" height="55" rx="8" fill="#0a1f14" stroke="#374151" stroke-width="1"/>
-  <text x="180" y="285" text-anchor="middle" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600">Pobierz CV PDF</text>
-  <text x="180" y="303" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">pdfmake ù client-side</text>
+  <text x="180" y="285" text-anchor="middle" fill="#9ca3af" font-family="Arial, sans-serif" font-size="11" font-weight="600">Pobierz CV PDF</text>
+  <text x="180" y="303" text-anchor="middle" fill="#6b7280" font-family="Arial, sans-serif" font-size="10">pdfmake - client-side</text>
 
   <rect x="360" y="260" width="200" height="55" rx="8" fill="#0a1f14" stroke="#374151" stroke-width="1"/>
-  <text x="460" y="285" text-anchor="middle" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600">Link zewn?trzny</text>
-  <text x="460" y="303" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">GitHub ù certyfikat</text>
+  <text x="460" y="285" text-anchor="middle" fill="#9ca3af" font-family="Arial, sans-serif" font-size="11" font-weight="600">Link zewnetrzny</text>
+  <text x="460" y="303" text-anchor="middle" fill="#6b7280" font-family="Arial, sans-serif" font-size="10">GitHub, certyfikat</text>
 
   <rect x="640" y="260" width="200" height="55" rx="8" fill="#0a1f14" stroke="#374151" stroke-width="1"/>
-  <text x="740" y="285" text-anchor="middle" fill="#9ca3af" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600">Kontakt email</text>
-  <text x="740" y="303" text-anchor="middle" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="10">mailto: z hero</text>
+  <text x="740" y="285" text-anchor="middle" fill="#9ca3af" font-family="Arial, sans-serif" font-size="11" font-weight="600">Kontakt email</text>
+  <text x="740" y="303" text-anchor="middle" fill="#6b7280" font-family="Arial, sans-serif" font-size="10">mailto: z hero</text>
 
   <rect x="40" y="340" width="840" height="45" rx="8" fill="#14532d" stroke="#00ff88" stroke-width="1"/>
-  <text x="460" y="368" text-anchor="middle" fill="#e5fef4" font-family="Arial, Helvetica, sans-serif" font-size="11">Produkt: modulowa nawigacja + i18n + eksport PDF ó tresc konfigurowalna przez messages.ts</text>
+  <text x="460" y="368" text-anchor="middle" fill="#e5fef4" font-family="Arial, sans-serif" font-size="11">Modulowa nawigacja + i18n + eksport PDF - tresc konfigurowalna przez messages.ts</text>
 </svg>

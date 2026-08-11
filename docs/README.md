@@ -1,6 +1,6 @@
 # portfolio-website — dokumentacja
 
-![Architektura](assets/architecture.svg)
+![Architektura](assets/architecture.png)
 
 > Statyczne portfolio SPA: React + Vite, dwujęzyczność, generowanie CV w przeglądarce, deploy na CDN.
 
@@ -41,7 +41,7 @@ npm run preview  # podgląd produkcji lokalnie
 
 ### Przepływ danych
 
-![Przepływ danych — od wejścia do CV](assets/data-flow.svg)
+![Przepływ danych — od wejścia do CV](assets/data-flow.png)
 
 Od wejścia na stronę do pobrania CV — wszystko po stronie klienta.
 
@@ -49,19 +49,19 @@ Od wejścia na stronę do pobrania CV — wszystko po stronie klienta.
 
 ### Mapa modułów
 
-![Mapa modułów strony](assets/sections-map.svg)
+![Mapa modułów strony](assets/sections-map.png)
 
 Komponenty React ↔ klucze w `messages.ts`.
 
 ### Przepływ odwiedzającego
 
-![Przepływ odwiedzającego](assets/user-journey.svg)
+![Przepływ odwiedzającego](assets/user-journey.png)
 
 Modułowa nawigacja: Hero → sekcje → locale → akcja (CV / link / email).
 
 ### Wdrożenie
 
-![Porównanie opcji hostingu](assets/deployment-options.svg)
+![Porównanie opcji hostingu](assets/deployment-options.png)
 
 → [Wdrożenie](deployment.md)
 
@@ -71,11 +71,12 @@ Modułowa nawigacja: Hero → sekcje → locale → akcja (CV / link / email).
 
 | Plik | Opis |
 |------|------|
-| [`assets/architecture.svg`](assets/architecture.svg) | Architektura wysokiego poziomu |
-| [`assets/data-flow.svg`](assets/data-flow.svg) | Przepływ danych |
-| [`assets/user-journey.svg`](assets/user-journey.svg) | Przepływ odwiedzającego |
-| [`assets/sections-map.svg`](assets/sections-map.svg) | Mapa modułów |
-| [`assets/deployment-options.svg`](assets/deployment-options.svg) | Opcje hostingu |
+| [`assets/architecture.png`](assets/architecture.png) | Architektura wysokiego poziomu (PNG do README) |
+| [`assets/data-flow.png`](assets/data-flow.png) | Przepływ danych |
+| [`assets/user-journey.png`](assets/user-journey.png) | Przepływ odwiedzającego |
+| [`assets/sections-map.png`](assets/sections-map.png) | Mapa modułów |
+| [`assets/deployment-options.png`](assets/deployment-options.png) | Opcje hostingu |
+| [`assets/*.svg`](assets/architecture.svg) | Wersje wektorowe (edycja) |
 
 ---
 

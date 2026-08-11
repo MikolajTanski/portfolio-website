@@ -1,6 +1,6 @@
 # portfolio-website
 
-![Architektura — portfolio-website](docs/assets/architecture.svg)
+![Architektura — portfolio-website](docs/assets/architecture.png)
 
 > Statyczna aplikacja React — jednostronicowe portfolio z dwujęzycznością (PL/EN) i generowaniem CV w przeglądarce.
 
@@ -24,7 +24,7 @@ Lekki **SPA bez backendu** — treść w jednym pliku TypeScript, deploy jako st
 
 ## Jak to działa
 
-![Przepływ danych](docs/assets/data-flow.svg)
+![Przepływ danych](docs/assets/data-flow.png)
 
 1. **CDN** serwuje bundle React z folderu `dist/`
 2. **LocaleProvider** ustawia język (PL/EN) z localStorage
@@ -35,7 +35,7 @@ Lekki **SPA bez backendu** — treść w jednym pliku TypeScript, deploy jako st
 
 ## Struktura strony
 
-![Mapa modułów](docs/assets/sections-map.svg)
+![Mapa modułów](docs/assets/sections-map.png)
 
 Jedna strona SPA — moduły konfigurowalne przez `messages.ts`. Szczegóły → [architektura](docs/architecture.md)
 
@@ -81,7 +81,7 @@ React 18 · TypeScript · Vite 5 · Tailwind CSS · Framer Motion · pdfmake · 
 
 ## Wdrożenie
 
-![Opcje hostingu](docs/assets/deployment-options.svg)
+![Opcje hostingu](docs/assets/deployment-options.png)
 
 Build → `dist/` → dowolny static host. Obecnie: **Vercel**. Więcej → [wdrożenie](docs/deployment.md)
 

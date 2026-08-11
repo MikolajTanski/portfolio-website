@@ -18,7 +18,7 @@ Statyczna strona — po `npm run build` otrzymujesz folder `dist/` do hostowania
 
 ## Diagram opcji wdrożenia
 
-![Opcje wdrożenia](assets/deployment-options.svg)
+![Opcje wdrożenia](assets/deployment-options.png)
 
 ---
 
