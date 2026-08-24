@@ -128,14 +128,14 @@ export const messagesPl: Messages = {
   skills: {
     sectionTitle: "Umiejętności",
     categories: [
-      { title: "Backend", skills: ["C#", ".NET Framework", ".NET Core", "Entity Framework Core"] },
-      { title: "Web i skrypty", skills: ["React", "TypeScript", "Python", "PowerShell", "Tailwind CSS"] },
-      { title: "AI i integracja", skills: ["Anthropic Claude API", "Model Context Protocol", "Prompting"] },
       {
         title: "Chmura i DevOps",
         skills: ["Azure", "OpenShift", "Kubernetes", "Docker", "Jenkins", "TeamCity", "Octopus Deploy", "GitLab", "Terraform", "GitHub Actions", "SonarQube"],
       },
       { title: "Monitoring i bazy", skills: ["Grafana", "ELK Stack", "OpenTelemetry", "Prometheus", "Microsoft SQL Server", "MongoDB", "IIS"] },
+      { title: "Backend", skills: ["C#", ".NET Framework", ".NET Core", "Entity Framework Core"] },
+      { title: "Web i skrypty", skills: ["React", "TypeScript", "Python", "PowerShell", "Tailwind CSS"] },
+      { title: "AI i integracja", skills: ["Anthropic Claude API", "Model Context Protocol", "Prompting"] },
     ],
   },
   experience: {
@@ -308,14 +308,14 @@ export const messagesEn: Messages = {
   skills: {
     sectionTitle: "Skills",
     categories: [
-      { title: "Backend", skills: ["C#", ".NET Framework", ".NET Core", "Entity Framework Core"] },
-      { title: "Web & scripting", skills: ["React", "TypeScript", "Python", "PowerShell", "Tailwind CSS"] },
-      { title: "AI & integration", skills: ["Anthropic Claude API", "Model Context Protocol", "Prompt engineering"] },
       {
         title: "Cloud & DevOps",
         skills: ["Azure", "OpenShift", "Kubernetes", "Docker", "Jenkins", "TeamCity", "Octopus Deploy", "GitLab", "Terraform", "GitHub Actions", "SonarQube"],
       },
       { title: "Observability & data", skills: ["Grafana", "ELK Stack", "OpenTelemetry", "Prometheus", "Microsoft SQL Server", "MongoDB", "IIS"] },
+      { title: "Backend", skills: ["C#", ".NET Framework", ".NET Core", "Entity Framework Core"] },
+      { title: "Web & scripting", skills: ["React", "TypeScript", "Python", "PowerShell", "Tailwind CSS"] },
+      { title: "AI & integration", skills: ["Anthropic Claude API", "Model Context Protocol", "Prompt engineering"] },
     ],
   },
   experience: {
