@@ -1,8 +1,8 @@
 import { motion, useReducedMotion } from "framer-motion";
-import { Boxes, Cloud, ExternalLink, FileStack, LayoutTemplate, Rocket, type LucideIcon } from "lucide-react";
+import { Boxes, ExternalLink, FileStack, LayoutTemplate, Server, type LucideIcon } from "lucide-react";
 
 /** Ikona dopasowana do tematu projektu (kolejność = `projectMeta` / `t.projects.items`). */
-const PROJECT_ICONS: readonly LucideIcon[] = [Boxes, FileStack, Cloud, LayoutTemplate, Rocket];
+const PROJECT_ICONS: readonly LucideIcon[] = [Server, FileStack, LayoutTemplate, Boxes];
 import { ProjectDescriptionText } from "@/components/ProjectDescriptionText";
 import TerminalCursor from "@/components/TerminalCursor";
 import { projectMeta } from "@/i18n/messages";

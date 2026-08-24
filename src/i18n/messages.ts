@@ -76,31 +76,27 @@ export type Messages = {
 };
 
 const projectUrls = [
-  "https://github.com/MikolajTanski/Nebula",
+  "https://github.com/MikolajTanski/DevBeast.Mcp",
   "https://github.com/MikolajTanski/Clipper",
-  "https://github.com/MikolajTanski/mango_azure",
   "https://github.com/MikolajTanski/portfolio-website",
+  "https://github.com/MikolajTanski/Nebula",
 ] as const;
 
 export const projectMeta: readonly {
   url: string | null;
   tags: readonly string[];
 }[] = [
-  { url: projectUrls[0], tags: ["Kubernetes", "Terraform", "Argo CD", "Helm"] },
+  { url: projectUrls[0], tags: [".NET 9", "MCP", "C#"] },
   { url: projectUrls[1], tags: ["React", "Python", "Flask", "Docker"] },
-  { url: projectUrls[2], tags: [".NET 10", "AKS", "Terraform", "Azure Service Bus", "GitHub Actions"] },
-  { url: projectUrls[3], tags: ["React", "Vite", "TypeScript", "Tailwind CSS", "Vercel"] },
-  {
-    url: null,
-    tags: [".NET", "AKS", "Azure", "Terraform", "GitHub Actions", "PostgreSQL", "Azure Service Bus"],
-  },
+  { url: projectUrls[2], tags: ["React", "Vite", "TypeScript", "Tailwind CSS"] },
+  { url: projectUrls[3], tags: ["Kubernetes", "Terraform", "Argo CD", "Helm"] },
 ];
 
 export const messagesPl: Messages = {
   meta: {
-    title: "Mikołaj Tański — .NET Developer · portfolio",
+    title: "Mikołaj Tański — DevOps / SRE · portfolio",
     description:
-      ".NET Developer i DevOps Engineer z doświadczeniem bankowym, absolwent informatyki i ekonometrii. Gdańsk.",
+      "DevOps / SRE Engineer. OpenShift, Azure, CI/CD, obserwowalność. Gdańsk.",
     ogLocale: "pl_PL",
   },
   nav: {
@@ -122,9 +118,9 @@ export const messagesPl: Messages = {
     email: "mikolajtanski1@gmail.com",
     phoneTel: "+48512011245",
     phoneDisplay: "512 011 245",
-    roles: ".NET Developer | DevOps Engineer",
+    roles: "DevOps / SRE Engineer | Azure · OpenShift · CI/CD",
     bio:
-      ".NET Developer z praktyką DevOps, m.in. w sektorze bankowym, z wykształceniem z informatyki i ekonometrii na Uniwersytecie Gdańskim. W projektach buduje i utrzymuje systemy backendowe w architekturze skalowalnej, z automatyzacją wdrożeń, konteneryzacją i chmurą, tak aby były przewidywalne w utrzymaniu i bezpieczne na produkcji.",
+      "DevOps / SRE Engineer: CI/CD, chmura i obserwowalność w bankowości. OpenShift, Azure/AKS, Terraform, Jenkins i GitHub Actions — od pipeline’u po produkcję (Grafana, ELK, OpenTelemetry Collector). .NET i Python tam, gdzie trzeba automatyzować wdrożenia i utrzymywać platformę.",
     locationLabel: "Lokalizacja",
     location: "Gdańsk, Polska",
     terminalDecoration: "dotnet run --project life",
@@ -137,32 +133,32 @@ export const messagesPl: Messages = {
       { title: "AI i integracja", skills: ["Anthropic Claude API", "Model Context Protocol", "Prompting"] },
       {
         title: "Chmura i DevOps",
-        skills: ["Azure", "Docker", "Kubernetes", "Terraform", "GitHub Actions", "Jenkins", "TeamCity", "Octopus Deploy", "GitLab"],
+        skills: ["Azure", "OpenShift", "Kubernetes", "Docker", "Jenkins", "TeamCity", "Octopus Deploy", "GitLab", "Terraform", "GitHub Actions", "SonarQube"],
       },
-      { title: "Monitoring i bazy", skills: ["ELK Stack", "Prometheus", "Microsoft SQL Server", "MongoDB", "IIS"] },
+      { title: "Monitoring i bazy", skills: ["Grafana", "ELK Stack", "OpenTelemetry", "Prometheus", "Microsoft SQL Server", "MongoDB", "IIS"] },
     ],
   },
   experience: {
     sectionTitle: "Doświadczenie",
     items: [
       {
-        role: "DevOps Engineer with .NET",
+        role: "DevOps / SRE Engineer",
         company: "VeloBank S.A.",
         period: "paź 2024 – obecnie",
         points: [
-          "Rozwój i utrzymanie aplikacji .NET Framework, w tym narzędzi administracyjnych dla II i III linii wsparcia oraz zespołu monitoringu, w środowisku bankowym o podwyższonych wymaganiach bezpieczeństwa.",
-          "Automatyzacja procesów operacyjnych (Jenkins, Python, PowerShell), m.in. przepływy związane z ticketami oraz zadaniami na IIS, z mniejszą pracą ręczną i lepszą przejrzystością przy incydentach.",
-          "Konfiguracja IIS, administracja serwerami oraz wykorzystanie ELK przy monitorowaniu i dochodzeniach na środowisku produkcyjnym.",
-          "Zarządzanie kopiami zapasowymi oraz środowiskami testowymi.",
+          "Utrzymanie i wdrażanie mikroserwisów na OpenShift i Azure w regulowanym środowisku bankowym: konfiguracja środowisk, dostarczanie zmian i eksploatacja pod rygorem bezpieczeństwa.",
+          "Obserwowalność produkcji: Grafana, ELK oraz OpenTelemetry Collector — logi, metryki i ślady przy incydentach i analizie przyczyn.",
+          "Automatyzacja CI/CD i procesów operacyjnych w Jenkins (Python, PowerShell), m.in. przepływy związane z ticketami i zadaniami na IIS, z mniejszą pracą ręczną.",
+          "Rozwój narzędzi .NET Framework dla II i III linii wsparcia oraz zespołu monitoringu; administracja IIS, kopie zapasowe i środowiska testowe.",
         ],
       },
       {
-        role: ".NET Developer",
+        role: ".NET Developer / DevOps Engineer",
         company: "Assel",
         period: "sty 2023 – paź 2024",
         points: [
-          "Rozwój aplikacji .NET Core, administracja IIS oraz wykorzystanie Dockera, optymalizacja wydajności i czytelności kodu.",
-          "Wdrożenie CI/CD od podstaw z TeamCity i Octopus Deploy, krótsze, powtarzalne wdrożenia i lepsza przewidywalność wydań.",
+          "Rola programisty .NET i DevOps: rozwój aplikacji .NET Core, Docker, IIS oraz automatyzacja całego łańcucha wdrożeń.",
+          "CI/CD od podstaw z TeamCity i Octopus Deploy, bramki jakości w SonarQube oraz administracja GitLab — krótsze, powtarzalne wydania.",
           "Przejęcie utrzymania największej aplikacji w organizacji po okresie narosłego długu technicznego i utrudnionej eksploatacji, doprowadzenie do stabilnego, codziennego utrzymania.",
           "Incydenty o podwyższonym priorytecie, analiza przyczyn i wdrażanie poprawek, w architekturze m.in. RabbitMQ.",
         ],
@@ -184,34 +180,28 @@ export const messagesPl: Messages = {
     linkLabelCerts: "weryfikacja certyfikatów",
     items: [
       {
-        title: "Nebula",
-        subtitle: "Środowisko labowe: Kubernetes i GitOps",
+        title: "DevBeast.Mcp",
+        subtitle: "Serwer MCP dla agentów AI",
         description:
-          "Projekt demonstracyjny: lokalny klaster Kubernetes z przepływami GitOps, ingress i zarządzaniem sekretami zgodnymi z praktykami produkcyjnymi. Cel: powtarzalna walidacja obrazów i konfiguracji przed wdrożeniem na współdzielone środowiska, bez uzależnienia od zewnętrznego klastra szkoleniowego. {{repo}}",
+          "DevBeast MCP — szablonowy serwer .NET 9 dla agentów AI (Cursor, Claude). Baza danych, logi, architektura, scaffolding, mocki integracji. {{repo}}",
       },
       {
         title: "Clipper",
-        subtitle: "Merge PDF przy przetwarzaniu lokalnym lub w kontrolowanej infrastrukturze",
+        subtitle: "Spinacz — lokalne scalanie PDF",
         description:
-          "Aplikacja ogranicza ryzyko związane z przekazywaniem dokumentów do publicznych serwisów online. Oferuje wybór plików, podgląd i scalanie w przeglądarce; operacja merge wykonywana jest przez backend uruchomiony na infrastrukturze pozostającej pod kontrolą organizacji, co ogranicza ekspozycję danych na usługi zewnętrzne. {{repo}}",
+          "Lokalne scalanie PDF: Web UI, CLI i HTTP API. React + Flask + pypdf, Docker Compose. Bez chmury, bez kont. {{repo}}",
       },
       {
-        title: "mango_azure",
-        subtitle: "Architektura mikroserwisowa zamówień na Microsoft Azure",
+        title: "portfolio-website",
+        subtitle: "React, Vite, Tailwind",
         description:
-          "Implementacja referencyjna dla scenariusza e-commerce / zamówień (m.in. gastronomia): usługi na Azure Kubernetes Service, infrastruktura w Terraformie, CI/CD w GitHub Actions, integracja przez bramkę API oraz komunikacja asynchroniczna. Rozdzielenie odpowiedzialności między usługami umożliwia niezależne skalowanie komponentów wraz z obciążeniem w porównaniu z monolitem. {{repo}}",
+          "Profesjonalne portfolio — React, Vite, Tailwind. {{repo}} · {{certs}}",
       },
       {
-        title: "Strona portfolio",
-        subtitle: "Witryna statyczna: profil, projekty, certyfikaty",
+        title: "Nebula",
+        subtitle: "Lab Kubernetes / GitOps (HCL)",
         description:
-          "Pojedyncza strona z sekcjami (m.in. doświadczenie, projekty, edukacja, certyfikaty), nawigacją kotwicową. {{repo}} · {{certs}}. Hosting statyczny na Vercel; źródła w repozytorium Git, co ułatwia śledzenie zmian i wdrożenia ciągłe.",
-      },
-      {
-        title: "Nautly",
-        subtitle: "Własny startup · W przygotowaniu",
-        description:
-          "Produkt rozwijany zespołowo w modelu startupu; publiczny link i materiały zewnętrzne po ustabilizowaniu oferty. Backend i infrastruktura na Azure: Azure Kubernetes Service, Terraform, GitHub Actions, .NET, PostgreSQL, Azure Service Bus.",
+          "Lokalny klaster Kubernetes z GitOps, ingress i sekretami w stylu produkcyjnym. Powtarzalna walidacja obrazów i konfiguracji przed wdrożeniem na współdzielone środowiska. {{repo}}",
       },
     ],
   },
@@ -222,7 +212,7 @@ export const messagesPl: Messages = {
         degree: "Magister",
         field: "Informatyka i ekonometria",
         school: "Uniwersytet Gdański",
-        year: "maj 2025 (w toku)",
+        year: "2026",
       },
       {
         degree: "Licencjat",
@@ -284,9 +274,9 @@ export const messagesPl: Messages = {
 
 export const messagesEn: Messages = {
   meta: {
-    title: "Mikołaj Tański — .NET Developer Portfolio",
+    title: "Mikołaj Tański — DevOps / SRE Portfolio",
     description:
-      ".NET Developer and DevOps Engineer with banking experience; background in computer science and econometrics. Gdańsk, Poland.",
+      "DevOps / SRE Engineer. OpenShift, Azure, CI/CD, observability. Gdańsk, Poland.",
     ogLocale: "en_US",
   },
   nav: {
@@ -308,9 +298,9 @@ export const messagesEn: Messages = {
     email: "mikolajtanski1@gmail.com",
     phoneTel: "+48512011245",
     phoneDisplay: "+48 512 011 245",
-    roles: ".NET Developer | DevOps Engineer",
+    roles: "DevOps / SRE Engineer | Azure · OpenShift · CI/CD",
     bio:
-      ".NET Developer with DevOps experience in banking and an academic background in computer science and econometrics from the University of Gdańsk. Builds and maintains scalable backend systems with automated delivery, containers, and cloud infrastructure, with emphasis on maintainability and production safety.",
+      "DevOps / SRE Engineer: CI/CD, cloud, and observability in banking. OpenShift, Azure/AKS, Terraform, Jenkins, and GitHub Actions — from pipeline to production (Grafana, ELK, OpenTelemetry Collector). .NET and Python where the platform needs deployment automation and day-to-day operations.",
     locationLabel: "Location",
     location: "Gdańsk, Poland",
     terminalDecoration: "dotnet run --project life",
@@ -323,32 +313,32 @@ export const messagesEn: Messages = {
       { title: "AI & integration", skills: ["Anthropic Claude API", "Model Context Protocol", "Prompt engineering"] },
       {
         title: "Cloud & DevOps",
-        skills: ["Azure", "Docker", "Kubernetes", "Terraform", "GitHub Actions", "Jenkins", "TeamCity", "Octopus Deploy", "GitLab"],
+        skills: ["Azure", "OpenShift", "Kubernetes", "Docker", "Jenkins", "TeamCity", "Octopus Deploy", "GitLab", "Terraform", "GitHub Actions", "SonarQube"],
       },
-      { title: "Observability & data", skills: ["ELK Stack", "Prometheus", "Microsoft SQL Server", "MongoDB", "IIS"] },
+      { title: "Observability & data", skills: ["Grafana", "ELK Stack", "OpenTelemetry", "Prometheus", "Microsoft SQL Server", "MongoDB", "IIS"] },
     ],
   },
   experience: {
     sectionTitle: "Experience",
     items: [
       {
-        role: "DevOps Engineer with .NET",
+        role: "DevOps / SRE Engineer",
         company: "VeloBank S.A.",
         period: "Oct 2024 – Present",
         points: [
-          "Builds and maintains .NET Framework applications, including internal admin tools for L2/L3 support and monitoring, in a regulated banking environment with strict security requirements.",
-          "Automates operational work with Jenkins, Python, and PowerShell, including ticket workflows and tasks around IIS, with clearer signals for incident analysis and less manual toil.",
-          "Configures IIS, supports server operations, and uses the ELK stack for production monitoring, log analysis, and investigations.",
-          "Manages backups and non-production test environments.",
+          "Operates and ships microservices on OpenShift and Azure in a regulated banking environment: environment configuration, delivery, and day-to-day operations under strict security requirements.",
+          "Production observability with Grafana, ELK, and the OpenTelemetry Collector — logs, metrics, and traces for incidents and root-cause analysis.",
+          "Automates CI/CD and operational work in Jenkins (Python, PowerShell), including ticket workflows and IIS tasks, with less manual toil.",
+          "Builds .NET Framework tools for L2/L3 support and monitoring; IIS administration, backups, and non-production test environments.",
         ],
       },
       {
-        role: ".NET Developer",
+        role: ".NET Developer / DevOps Engineer",
         company: "Assel",
         period: "Jan 2023 – Oct 2024",
         points: [
-          "Builds and evolves .NET Core applications, manages IIS, uses Docker, and improves runtime performance and code clarity.",
-          "Introduced CI/CD from the ground up with TeamCity and Octopus Deploy, with shorter, repeatable deployments and a more predictable release cadence.",
+          "Combined .NET developer and DevOps role: .NET Core applications, Docker, IIS, and end-to-end deployment automation.",
+          "Built CI/CD from the ground up with TeamCity and Octopus Deploy, quality gates in SonarQube, and GitLab administration — shorter, repeatable releases.",
           "Inherited the organization’s largest application after significant technical debt and fragile day-to-day operations, stabilized ownership, and brought maintenance back to a predictable baseline.",
           "Root cause analysis and fixes for high-priority incidents, with RabbitMQ among other integration components in the stack.",
         ],
@@ -370,34 +360,28 @@ export const messagesEn: Messages = {
     linkLabelCerts: "certificate verification",
     items: [
       {
-        title: "Nebula",
-        subtitle: "Lab environment: Kubernetes and GitOps",
+        title: "DevBeast.Mcp",
+        subtitle: "MCP server for AI agents",
         description:
-          "Demonstration stack: local Kubernetes cluster with GitOps, ingress, and secrets handling aligned with production-style practice. Intended for repeatable validation of container images and configuration prior to promotion to shared environments, without dependency on an external training cluster. {{repo}}",
+          "DevBeast MCP — .NET 9 template server for AI agents (Cursor, Claude). Database, logs, architecture, scaffolding, mock integrations. {{repo}}",
       },
       {
         title: "Clipper",
-        subtitle: "PDF merge on-premises or on controlled infrastructure",
+        subtitle: "Spinacz — local PDF merger",
         description:
-          "Reduces risk associated with uploading documents to public online merge services. Provides file selection, preview, and merge in the browser; merge runs on a backend deployed on infrastructure controlled by the organization, limiting exposure of sensitive data to third-party SaaS paths. {{repo}}",
+          "Local PDF merger with Web UI, CLI and HTTP API. React + Flask + pypdf, Docker Compose. No cloud, no accounts. {{repo}}",
       },
       {
-        title: "mango_azure",
-        subtitle: "Order-processing microservices on Microsoft Azure",
+        title: "portfolio-website",
+        subtitle: "React, Vite, Tailwind",
         description:
-          "Reference implementation for an e-commerce / ordering scenario (including food service): services on Azure Kubernetes Service, infrastructure as code with Terraform, CI/CD pipelines in GitHub Actions, API gateway integration, and asynchronous messaging. Service decomposition supports independent scaling of components under load compared with a monolithic design. {{repo}}",
+          "Professional portfolio — React, Vite, Tailwind. {{repo}} · {{certs}}",
       },
       {
-        title: "Portfolio website",
-        subtitle: "Static site: profile, projects, certifications",
+        title: "Nebula",
+        subtitle: "Kubernetes / GitOps lab (HCL)",
         description:
-          "Single-page layout with sections for experience, projects, education, and certifications, plus anchor navigation, {{repo}} and {{certs}}. Static hosting on Vercel; content maintained in Git for traceability and straightforward deployment.",
-      },
-      {
-        title: "Nautly",
-        subtitle: "Founding-stage startup · In progress",
-        description:
-          "Team-built product in a startup setting; no public URL yet while the offering stabilises. Azure Kubernetes Service, Terraform, GitHub Actions, .NET, PostgreSQL, and Azure Service Bus.",
+          "Local Kubernetes cluster with GitOps, ingress, and secrets handling in a production-style setup. Repeatable validation of images and configuration before promotion to shared environments. {{repo}}",
       },
     ],
   },
@@ -408,7 +392,7 @@ export const messagesEn: Messages = {
         degree: "Master's Degree",
         field: "Computer Science and Econometrics",
         school: "University of Gdańsk",
-        year: "Expected May 2025",
+        year: "2026",
       },
       {
         degree: "Bachelor's Degree",
