@@ -24,9 +24,15 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <p className="font-mono text-sm mb-4 text-muted-foreground flex flex-wrap items-center">
-            <span className="text-primary">~/</span>hello-world
-            <TerminalCursor />
+          <p className="font-mono text-sm mb-4 text-muted-foreground flex flex-wrap items-center justify-between gap-x-4 gap-y-2 max-w-2xl">
+            <span className="flex flex-wrap items-center">
+              <span className="text-primary">~/</span>cluster
+              <TerminalCursor />
+            </span>
+            <span className="inline-flex items-center gap-1.5 text-xs tracking-wide text-muted-foreground/80">
+              <span className="size-1.5 rounded-full bg-primary shrink-0" aria-hidden />
+              {t.hero.statusChip}
+            </span>
           </p>
 
           <h1 className="text-5xl md:text-7xl font-heading font-bold tracking-tight mb-4">

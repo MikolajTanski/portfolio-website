@@ -29,7 +29,7 @@ const ProjectsSection = () => {
       <div className="container">
         <div className="mb-12">
           <p className="font-mono text-sm mb-2 text-muted-foreground flex flex-wrap items-center">
-            <span className="text-primary">~/</span>projects
+            <span className="text-primary">~/</span>workloads
             <span className="text-muted-foreground/45 ml-2 tabular-nums">· 04</span>
             <TerminalCursor />
           </p>

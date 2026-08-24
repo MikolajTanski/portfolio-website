@@ -28,6 +28,7 @@ export type Messages = {
     locationLabel: string;
     location: string;
     terminalDecoration: string;
+    statusChip: string;
   };
   skills: {
     sectionTitle: string;
@@ -123,7 +124,8 @@ export const messagesPl: Messages = {
       "DevOps / SRE Engineer: CI/CD, chmura i obserwowalność w bankowości. OpenShift, Azure/AKS, Terraform, Jenkins i GitHub Actions — od pipeline’u po produkcję (Grafana, ELK, OpenTelemetry Collector). .NET i Python tam, gdzie trzeba automatyzować wdrożenia i utrzymywać platformę.",
     locationLabel: "Lokalizacja",
     location: "Gdańsk, Polska",
-    terminalDecoration: "dotnet run --project life",
+    terminalDecoration: "kubectl apply -f production",
+    statusChip: "prod · operational",
   },
   skills: {
     sectionTitle: "Umiejętności",
@@ -303,7 +305,8 @@ export const messagesEn: Messages = {
       "DevOps / SRE Engineer: CI/CD, cloud, and observability in banking. OpenShift, Azure/AKS, Terraform, Jenkins, and GitHub Actions — from pipeline to production (Grafana, ELK, OpenTelemetry Collector). .NET and Python where the platform needs deployment automation and day-to-day operations.",
     locationLabel: "Location",
     location: "Gdańsk, Poland",
-    terminalDecoration: "dotnet run --project life",
+    terminalDecoration: "kubectl apply -f production",
+    statusChip: "prod · operational",
   },
   skills: {
     sectionTitle: "Skills",

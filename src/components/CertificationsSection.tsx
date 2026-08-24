@@ -25,7 +25,7 @@ const CertificationsSection = () => {
       <div className="container">
         <div className="mb-12">
           <p className="font-mono text-sm mb-2 text-muted-foreground flex flex-wrap items-center">
-            <span className="text-primary">~/</span>certifications
+            <span className="text-primary">~/</span>certs
             <span className="text-muted-foreground/45 ml-2 tabular-nums">· 06</span>
             <TerminalCursor />
           </p>
