@@ -118,7 +118,7 @@ export const messagesPl: Messages = {
     email: "mikolajtanski1@gmail.com",
     phoneTel: "+48512011245",
     phoneDisplay: "512 011 245",
-    roles: "DevOps / SRE Engineer | Azure · OpenShift · CI/CD",
+    roles: "DevOps / SRE Engineer | Azure · OpenShift · GitHub Actions",
     bio:
       "DevOps / SRE Engineer: CI/CD, chmura i obserwowalność w bankowości. OpenShift, Azure/AKS, Terraform, Jenkins i GitHub Actions — od pipeline’u po produkcję (Grafana, ELK, OpenTelemetry Collector). .NET i Python tam, gdzie trzeba automatyzować wdrożenia i utrzymywać platformę.",
     locationLabel: "Lokalizacja",
@@ -298,7 +298,7 @@ export const messagesEn: Messages = {
     email: "mikolajtanski1@gmail.com",
     phoneTel: "+48512011245",
     phoneDisplay: "+48 512 011 245",
-    roles: "DevOps / SRE Engineer | Azure · OpenShift · CI/CD",
+    roles: "DevOps / SRE Engineer | Azure · OpenShift · GitHub Actions",
     bio:
       "DevOps / SRE Engineer: CI/CD, cloud, and observability in banking. OpenShift, Azure/AKS, Terraform, Jenkins, and GitHub Actions — from pipeline to production (Grafana, ELK, OpenTelemetry Collector). .NET and Python where the platform needs deployment automation and day-to-day operations.",
     locationLabel: "Location",
