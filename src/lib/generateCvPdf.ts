@@ -3,16 +3,16 @@ import { SITE_URL, showPublicPhone } from "@/config/site";
 
 type PdfContent = Record<string, unknown> | Record<string, unknown>[];
 
-/** Matches site `:root` — dark shell + mint primary (hsl 160 100% ~50%) */
+/** Matches site `:root` — dashboard navy + Kibana teal (hsl 174 78% ~46%) */
 const palette = {
-  page: "#0b0d10",
+  page: "#0b1018",
   text: "#e6e8eb",
   textMuted: "#9aa3ad",
   textDim: "#6b7684",
-  accent: "#00e68a",
-  accentDim: "#00b870",
+  accent: "#1ad1be",
+  accentDim: "#0ea89a",
   rule: "#2a3038",
-  ruleAccent: "#00e68a",
+  ruleAccent: "#1ad1be",
 } as const;
 
 /**

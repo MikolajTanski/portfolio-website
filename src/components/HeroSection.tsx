@@ -13,9 +13,9 @@ const HeroSection = () => {
   return (
     <section className="min-h-screen flex items-center relative overflow-hidden">
       {/* Grid background */}
-      <div className="absolute inset-0 opacity-[0.03]" style={{
-        backgroundImage: 'linear-gradient(hsl(160 100% 50%) 1px, transparent 1px), linear-gradient(90deg, hsl(160 100% 50%) 1px, transparent 1px)',
-        backgroundSize: '60px 60px'
+      <div className="absolute inset-0 opacity-[0.04]" style={{
+        backgroundImage: 'linear-gradient(hsl(var(--primary)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--primary)) 1px, transparent 1px)',
+        backgroundSize: '48px 48px'
       }} />
 
       <div className="container relative z-10 py-20">
@@ -26,11 +26,11 @@ const HeroSection = () => {
         >
           <p className="font-mono text-sm mb-4 text-muted-foreground flex flex-wrap items-center justify-between gap-x-4 gap-y-2 max-w-2xl">
             <span className="flex flex-wrap items-center">
-              <span className="text-primary">~/</span>cluster
+              <span className="text-primary">~/</span>logs
               <TerminalCursor />
             </span>
             <span className="inline-flex items-center gap-1.5 text-xs tracking-wide text-muted-foreground/80">
-              <span className="size-1.5 rounded-full bg-primary shrink-0" aria-hidden />
+              <span className="size-1.5 rounded-full bg-primary shrink-0 animate-pulse motion-reduce:animate-none" aria-hidden />
               {t.hero.statusChip}
             </span>
           </p>
@@ -109,7 +109,7 @@ const HeroSection = () => {
           transition={{ delay: 1.2 }}
           className="absolute bottom-10 right-10 hidden lg:block font-mono text-muted-foreground/30 text-sm"
         >
-          <span className="text-primary/40">$</span> {t.hero.terminalDecoration}
+          <span className="text-primary/50">GET</span> {t.hero.terminalDecoration}
           <span className="inline-block w-2 h-4 bg-primary/60 ml-1 animate-blink" />
         </motion.div>
       </div>

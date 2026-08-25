@@ -95,9 +95,9 @@ export const projectMeta: readonly {
 
 export const messagesPl: Messages = {
   meta: {
-    title: "Mikołaj Tański — DevOps / SRE · portfolio",
+    title: "Mikołaj Tański — DevOps Engineer / SRE · portfolio",
     description:
-      "DevOps / SRE Engineer. OpenShift, Azure, CI/CD, obserwowalność. Gdańsk.",
+      "DevOps Engineer / SRE. CI/CD, automatyzacja i obserwowalność produkcji w bankowości. Gdańsk.",
     ogLocale: "pl_PL",
   },
   nav: {
@@ -119,20 +119,20 @@ export const messagesPl: Messages = {
     email: "mikolajtanski1@gmail.com",
     phoneTel: "+48512011245",
     phoneDisplay: "512 011 245",
-    roles: "DevOps / SRE Engineer | Azure · OpenShift · GitHub Actions",
+    roles: "DevOps Engineer / SRE | OpenShift · ELK · OpenTelemetry · .NET",
     bio:
-      "DevOps / SRE Engineer: CI/CD, chmura i obserwowalność w bankowości. OpenShift, Azure/AKS, Terraform, Jenkins i GitHub Actions — od pipeline’u po produkcję (Grafana, ELK, OpenTelemetry Collector). .NET i Python tam, gdzie trzeba automatyzować wdrożenia i utrzymywać platformę.",
+      "Operations & Reliability / SRE Engineer w bankowości: CI/CD, automatyzacja i obserwowalność produkcji. Utrzymuję i wdrażam korporacyjne obciążenia i aplikacje .NET — Jenkins, Python i PowerShell od pipeline’u po produkcję. Na co dzień Grafana, ELK i OpenTelemetry Collector — logi, metryki i ślady, gdy coś pada. .NET i Python tam, gdzie platforma wymaga automatyzacji, nie jako osobna tożsamość: mniej ręcznych wydań, mniej ticketów, które powinny być jobem. Wcześniej .NET developer / DevOps engineer: TeamCity, Octopus Deploy, bramki jakości SonarQube, administracja GitLab.",
     locationLabel: "Lokalizacja",
     location: "Gdańsk, Polska",
-    terminalDecoration: "kubectl apply -f production",
-    statusChip: "prod · operational",
+    terminalDecoration: "logs-*/_search",
+    statusChip: "logs · metrics · traces",
   },
   skills: {
     sectionTitle: "Umiejętności",
     categories: [
       {
         title: "Chmura i DevOps",
-        skills: ["Azure", "OpenShift", "Kubernetes", "Docker", "Jenkins", "TeamCity", "Octopus Deploy", "GitLab", "Terraform", "GitHub Actions", "SonarQube"],
+        skills: ["OpenShift", "Kubernetes", "Docker", "Jenkins", "TeamCity", "Octopus Deploy", "GitLab", "GitHub Actions", "SonarQube", "Terraform", "Azure"],
       },
       { title: "Monitoring i bazy", skills: ["Grafana", "ELK Stack", "OpenTelemetry", "Prometheus", "Microsoft SQL Server", "MongoDB", "IIS"] },
       { title: "Backend", skills: ["C#", ".NET Framework", ".NET Core", "Entity Framework Core"] },
@@ -144,34 +144,34 @@ export const messagesPl: Messages = {
     sectionTitle: "Doświadczenie",
     items: [
       {
-        role: "DevOps / SRE Engineer",
+        role: "DevOps Engineer / SRE",
         company: "VeloBank S.A.",
         period: "paź 2024 – obecnie",
         points: [
-          "Utrzymanie i wdrażanie mikroserwisów na OpenShift i Azure w regulowanym środowisku bankowym: konfiguracja środowisk, dostarczanie zmian i eksploatacja pod rygorem bezpieczeństwa.",
-          "Obserwowalność produkcji: Grafana, ELK oraz OpenTelemetry Collector — logi, metryki i ślady przy incydentach i analizie przyczyn.",
-          "Automatyzacja CI/CD i procesów operacyjnych w Jenkins (Python, PowerShell), m.in. przepływy związane z ticketami i zadaniami na IIS, z mniejszą pracą ręczną.",
-          "Rozwój narzędzi .NET Framework dla II i III linii wsparcia oraz zespołu monitoringu; administracja IIS, kopie zapasowe i środowiska testowe.",
+          "Obserwowalność i zarządzanie incydentami: utrzymanie i skalowanie pipeline’ów monitoringu i logowania (Grafana, ELK Stack, OpenTelemetry Collector — metryki, logi strukturalne, ślady rozproszone) pod RCA, mitygację incydentów i niezawodność w rygorze bezpieczeństwa bankowego.",
+          "CI/CD i automatyzacja operacyjna: pipeline’y i workflow w Jenkins, Python i PowerShell — mniej ręcznej pracy, sprawniejsze dostarczanie aplikacji w środowisku regulowanym.",
+          "Operacje i dostarczanie aplikacji: konfiguracja, wydania i codzienna eksploatacja krytycznych aplikacji .NET, dostępność i stabilność w środowiskach.",
+          "Infrastruktura i wsparcie L3: systemy .NET Framework, serwery WWW (IIS), kopie zapasowe i produkcyjne środowiska testowe; monitoring i diagnostyka pod kątem zdrowia systemów.",
         ],
       },
       {
         role: ".NET Developer / DevOps Engineer",
         company: "Assel",
-        period: "sty 2023 – paź 2024",
+        period: "sty 2023 – wrz 2024",
         points: [
-          "Rola programisty .NET i DevOps: rozwój aplikacji .NET Core, Docker, IIS oraz automatyzacja całego łańcucha wdrożeń.",
-          "CI/CD od podstaw z TeamCity i Octopus Deploy, bramki jakości w SonarQube oraz administracja GitLab — krótsze, powtarzalne wydania.",
-          "Przejęcie utrzymania największej aplikacji w organizacji po okresie narosłego długu technicznego i utrudnionej eksploatacji, doprowadzenie do stabilnego, codziennego utrzymania.",
-          "Incydenty o podwyższonym priorytecie, analiza przyczyn i wdrażanie poprawek, w architekturze m.in. RabbitMQ.",
+          "Developer i DevOps przy jednym biurku: .NET Core, Docker, IIS i cały łańcuch wydań.",
+          "CI/CD od zera z TeamCity i Octopus Deploy; bramki jakości w SonarQube; administracja GitLab.",
+          "Przejęcie największej aplikacji w organizacji po narosłym długu technicznym i kruchej eksploatacji; przywrócenie codziennego utrzymania do stabilnego poziomu.",
+          "Incydenty wysokiego priorytetu, analiza przyczyn i poprawki (w stosie m.in. RabbitMQ).",
         ],
       },
       {
-        role: ".NET Developer (staż)",
+        role: ".NET Developer",
         company: "Oakforge",
         period: "cze 2022 – gru 2022",
         points: [
-          "Staż w zespole developerskim przy realnych zadaniach w ekosystemie .NET: współpraca z kodem produkcyjnym, code review oraz przestrzeganie przyjętych w projekcie standardów.",
-          "Współudział w rozwoju i utrzymaniu komponentów backendowych oraz wdrażaniu dobrych praktyk inżynierskich.",
+          "Staż przy realnej pracy w .NET: kod produkcyjny, code review, konwencje zespołu.",
+          "Komponenty backendowe i codzienna praktyka inżynierska.",
         ],
       },
     ],
@@ -276,9 +276,9 @@ export const messagesPl: Messages = {
 
 export const messagesEn: Messages = {
   meta: {
-    title: "Mikołaj Tański — DevOps / SRE Portfolio",
+    title: "Mikołaj Tański — DevOps Engineer / SRE Portfolio",
     description:
-      "DevOps / SRE Engineer. OpenShift, Azure, CI/CD, observability. Gdańsk, Poland.",
+      "DevOps Engineer / SRE. CI/CD, automation, and production observability in banking. Gdańsk, Poland.",
     ogLocale: "en_US",
   },
   nav: {
@@ -300,20 +300,20 @@ export const messagesEn: Messages = {
     email: "mikolajtanski1@gmail.com",
     phoneTel: "+48512011245",
     phoneDisplay: "+48 512 011 245",
-    roles: "DevOps / SRE Engineer | Azure · OpenShift · GitHub Actions",
+    roles: "DevOps Engineer / SRE | OpenShift · ELK · OpenTelemetry · .NET",
     bio:
-      "DevOps / SRE Engineer: CI/CD, cloud, and observability in banking. OpenShift, Azure/AKS, Terraform, Jenkins, and GitHub Actions — from pipeline to production (Grafana, ELK, OpenTelemetry Collector). .NET and Python where the platform needs deployment automation and day-to-day operations.",
+      "Operations & Reliability / SRE Engineer in banking: CI/CD, automation, and production observability. I run and ship enterprise .NET workloads and applications, using Jenkins, Python, and PowerShell from pipeline to production. Day-to-day work is Grafana, ELK, and OpenTelemetry Collector — logs, metrics, and traces when something breaks. .NET and Python where the platform needs automation, not as a side identity: fewer manual releases, fewer tickets that should have been a job. Previously a .NET developer / DevOps engineer: TeamCity, Octopus Deploy, SonarQube quality gates, GitLab administration.",
     locationLabel: "Location",
     location: "Gdańsk, Poland",
-    terminalDecoration: "kubectl apply -f production",
-    statusChip: "prod · operational",
+    terminalDecoration: "logs-*/_search",
+    statusChip: "logs · metrics · traces",
   },
   skills: {
     sectionTitle: "Skills",
     categories: [
       {
         title: "Cloud & DevOps",
-        skills: ["Azure", "OpenShift", "Kubernetes", "Docker", "Jenkins", "TeamCity", "Octopus Deploy", "GitLab", "Terraform", "GitHub Actions", "SonarQube"],
+        skills: ["OpenShift", "Kubernetes", "Docker", "Jenkins", "TeamCity", "Octopus Deploy", "GitLab", "GitHub Actions", "SonarQube", "Terraform", "Azure"],
       },
       { title: "Observability & data", skills: ["Grafana", "ELK Stack", "OpenTelemetry", "Prometheus", "Microsoft SQL Server", "MongoDB", "IIS"] },
       { title: "Backend", skills: ["C#", ".NET Framework", ".NET Core", "Entity Framework Core"] },
@@ -325,34 +325,34 @@ export const messagesEn: Messages = {
     sectionTitle: "Experience",
     items: [
       {
-        role: "DevOps / SRE Engineer",
+        role: "DevOps Engineer / SRE",
         company: "VeloBank S.A.",
         period: "Oct 2024 – Present",
         points: [
-          "Operates and ships microservices on OpenShift and Azure in a regulated banking environment: environment configuration, delivery, and day-to-day operations under strict security requirements.",
-          "Production observability with Grafana, ELK, and the OpenTelemetry Collector — logs, metrics, and traces for incidents and root-cause analysis.",
-          "Automates CI/CD and operational work in Jenkins (Python, PowerShell), including ticket workflows and IIS tasks, with less manual toil.",
-          "Builds .NET Framework tools for L2/L3 support and monitoring; IIS administration, backups, and non-production test environments.",
+          "Observability and incident management: maintaining and scaling enterprise monitoring and logging pipelines with Grafana, ELK Stack, and OpenTelemetry Collector (metrics, structured logs, distributed traces) for RCA, incident mitigation, and reliability under strict security constraints.",
+          "CI/CD and operational automation: deployment pipelines and workflows in Jenkins, Python, and PowerShell — less manual overhead, faster application delivery in a regulated banking environment.",
+          "Application operations and delivery: configuration, releases, and day-to-day operations for mission-critical .NET applications, with high availability and stability across environments.",
+          "Infrastructure and L3 support: operating and troubleshooting .NET Framework systems, web servers (IIS), backups, and production test environments, with monitoring and diagnostics for proactive health management.",
         ],
       },
       {
         role: ".NET Developer / DevOps Engineer",
         company: "Assel",
-        period: "Jan 2023 – Oct 2024",
+        period: "Jan 2023 – Sep 2024",
         points: [
-          "Combined .NET developer and DevOps role: .NET Core applications, Docker, IIS, and end-to-end deployment automation.",
-          "Built CI/CD from the ground up with TeamCity and Octopus Deploy, quality gates in SonarQube, and GitLab administration — shorter, repeatable releases.",
-          "Inherited the organization’s largest application after significant technical debt and fragile day-to-day operations, stabilized ownership, and brought maintenance back to a predictable baseline.",
-          "Root cause analysis and fixes for high-priority incidents, with RabbitMQ among other integration components in the stack.",
+          "Developer and DevOps on the same desk: .NET Core, Docker, IIS, and the full release chain.",
+          "CI/CD from scratch with TeamCity and Octopus Deploy; quality gates in SonarQube; GitLab administration.",
+          "Took over the organization’s largest application after accumulated technical debt and fragile operations; brought day-to-day maintenance back to a stable baseline.",
+          "High-priority incidents, root-cause analysis, and fixes (including RabbitMQ in the stack).",
         ],
       },
       {
-        role: ".NET Developer (internship)",
+        role: ".NET Developer",
         company: "Oakforge",
         period: "Jun 2022 – Dec 2022",
         points: [
-          "Internship with a product engineering team on real .NET work: exposure to production codebases, code review, and team conventions.",
-          "Contributed to backend components and day-to-day engineering practices alongside senior developers.",
+          "Internship on real .NET work: production code, code review, team conventions.",
+          "Backend components and day-to-day engineering practice.",
         ],
       },
     ],
