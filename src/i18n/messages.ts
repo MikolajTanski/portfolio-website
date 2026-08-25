@@ -119,7 +119,7 @@ export const messagesPl: Messages = {
     email: "mikolajtanski1@gmail.com",
     phoneTel: "+48512011245",
     phoneDisplay: "512 011 245",
-    roles: "DevOps Engineer / SRE | OpenShift · ELK · OpenTelemetry · .NET",
+    roles: "DevOps Engineer / SRE | ELK · OpenTelemetry · .NET",
     bio:
       "Operations & Reliability / SRE Engineer w bankowości: CI/CD, automatyzacja i obserwowalność produkcji. Utrzymuję i wdrażam korporacyjne obciążenia i aplikacje .NET — Jenkins, Python i PowerShell od pipeline’u po produkcję. Na co dzień Grafana, ELK i OpenTelemetry Collector — logi, metryki i ślady, gdy coś pada. .NET i Python tam, gdzie platforma wymaga automatyzacji, nie jako osobna tożsamość: mniej ręcznych wydań, mniej ticketów, które powinny być jobem. Wcześniej .NET developer / DevOps engineer: TeamCity, Octopus Deploy, bramki jakości SonarQube, administracja GitLab.",
     locationLabel: "Lokalizacja",
@@ -132,7 +132,7 @@ export const messagesPl: Messages = {
     categories: [
       {
         title: "Chmura i DevOps",
-        skills: ["OpenShift", "Kubernetes", "Docker", "Jenkins", "TeamCity", "Octopus Deploy", "GitLab", "GitHub Actions", "SonarQube", "Terraform", "Azure"],
+        skills: ["Kubernetes", "Docker", "Jenkins", "TeamCity", "Octopus Deploy", "GitLab", "GitHub Actions", "SonarQube", "Terraform", "Azure"],
       },
       { title: "Monitoring i bazy", skills: ["Grafana", "ELK Stack", "OpenTelemetry", "Prometheus", "Microsoft SQL Server", "MongoDB", "IIS"] },
       { title: "Backend", skills: ["C#", ".NET Framework", ".NET Core", "Entity Framework Core"] },
@@ -300,7 +300,7 @@ export const messagesEn: Messages = {
     email: "mikolajtanski1@gmail.com",
     phoneTel: "+48512011245",
     phoneDisplay: "+48 512 011 245",
-    roles: "DevOps Engineer / SRE | OpenShift · ELK · OpenTelemetry · .NET",
+    roles: "DevOps Engineer / SRE | ELK · OpenTelemetry · .NET",
     bio:
       "Operations & Reliability / SRE Engineer in banking: CI/CD, automation, and production observability. I run and ship enterprise .NET workloads and applications, using Jenkins, Python, and PowerShell from pipeline to production. Day-to-day work is Grafana, ELK, and OpenTelemetry Collector — logs, metrics, and traces when something breaks. .NET and Python where the platform needs automation, not as a side identity: fewer manual releases, fewer tickets that should have been a job. Previously a .NET developer / DevOps engineer: TeamCity, Octopus Deploy, SonarQube quality gates, GitLab administration.",
     locationLabel: "Location",
@@ -313,7 +313,7 @@ export const messagesEn: Messages = {
     categories: [
       {
         title: "Cloud & DevOps",
-        skills: ["OpenShift", "Kubernetes", "Docker", "Jenkins", "TeamCity", "Octopus Deploy", "GitLab", "GitHub Actions", "SonarQube", "Terraform", "Azure"],
+        skills: ["Kubernetes", "Docker", "Jenkins", "TeamCity", "Octopus Deploy", "GitLab", "GitHub Actions", "SonarQube", "Terraform", "Azure"],
       },
       { title: "Observability & data", skills: ["Grafana", "ELK Stack", "OpenTelemetry", "Prometheus", "Microsoft SQL Server", "MongoDB", "IIS"] },
       { title: "Backend", skills: ["C#", ".NET Framework", ".NET Core", "Entity Framework Core"] },
